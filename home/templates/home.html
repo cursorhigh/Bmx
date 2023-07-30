@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+    {% load socialaccount %}
+    <title>BMX IQ Race</title>
+    <link rel="stylesheet" href="{% static 'css/home.css'%}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="{% static 'image/favicon.ico' %}" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the BMX IQ Race</h1>
+    </header>
+    <video autoplay muted loop id="myVideo" speed="0.2" style="filter: brightness(0.56);">
+        <source src="{% static 'video/bg.webm'%}" type="video/webm">
+    </video>
+    <main>
+        {% if user.is_authenticated %}
+        <div class="glass-button">
+            <a href="" class="username ">{{ user.username }}</a>
+            <div class="buttons">
+                <div class="gchat-button" title="Global Chat" onclick="handleButtonClick(this.title)"></div>
+                <div class="leaderboard-button" title="Leaderboard"  onclick="handleButtonClick(this.title)"></div>
+                <div class="play-button" onclick="openCategoryModal()" title="Play!"></div>
+                <div class="modal fade" id="category-modal" tabindex="-1" aria-labelledby="category-modal-label"
+                    aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="category-modal-label">Select a category
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                                        </svg>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="category-group">
+                                    <button class="category-option " onclick="openMatchmakingModal('Olympics')">Olympics</button>
+                                    <button class="category-option " onclick="openMatchmakingModal('Athletics')">Athletics</button>
+                                    <button class="category-option " onclick="openMatchmakingModal('Football')">Football</button>
+                                </div>
+                                <div class="category-group">
+                                    <button class="category-option " onclick="openMatchmakingModal('GK')">G K</button>
+                                    <button class="category-option " onclick="openMatchmakingModal('History')">History</button>
+                                    <button class="category-option " onclick="openMatchmakingModal('Math')">Math</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings-button" title="Settings"  onclick="handleButtonClick(this.title)"></div>
+                <div class="logout-button " title="Logout" onclick="handleButtonClick(this.title)"></div>
+            </div>
+        </div>
+        {% else %}
+        {% block content %}
+        <div class="login">
+            <div class="container">
+                <a href="{% provider_login_url 'google'%}?next=/accounts/google/login/callback/">
+                    <div class="logo-wrapper">
+                        <img src="{%static 'image\g-logo.png'%}" alt="Google Logo">
+                    </div>
+                </a>
+            </div>
+        </div>
+        {% endblock content %}
+        {% endif %}
+    </main>
+    <footer>
+
+        <p class="version">Version: 1.1.0</p>
+    </footer>
+    {% csrf_token %}
+    <script>
+        function handleButtonClick(buttonTitle) {
+            switch (buttonTitle) {
+            case "Global Chat":
+                var username = '{{ user.username }}';
+                $.ajax({
+                    url: '/join-global/',
+                    method: 'GET',
+                    data: {
+                        username: username
+                    },
+                    success: function(response) {
+                        $('#username').text(response.username)
+                        var joinURL = '/gchatmid?username='+ response.username;
+                        if (response.status) {
+                            window.location.href = joinURL
+                        } else {
+                            window.location.href = '/';
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.log('Error sending AJAX request:', error);
+                    }
+                });
+                break;
+            case "Leaderboard":
+                window.location.href = '/leaderboard';
+                break;
+            case "Settings":
+                window.location.href = '/settings';
+                break;
+            case "Logout":
+                if (confirm("Are you sure you want to Logout?")) {
+                        window.location.href = '/logout';
+                    }
+                break;
+            }
+        }
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+        function openCategoryModal() {
+            $('#category-modal').modal('show');
+        }
+
+        function openMatchmakingModal(category) {
+            var googleEmail = "{{ user.email }}";
+            var username = googleEmail.split("@")[0];
+            var category = category;
+            var url = "/matchmaking?playerid=" + username + "&category=" + category;
+
+        window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>

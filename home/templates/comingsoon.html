@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    {% load socialaccount %}
+    <link rel="icon" href="{% static 'image/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{%static 'css/comingsoon.css' %}">
+    <title>BMX IQ Race - Coming Soon !</title>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo" speed="0.2" style=" filter: brightness(0.56);">
+            <source src="{% static 'video/bg.webm'%}" type="video/webm">
+        </video>
+    </div>
+    <div class="content">
+        <h1>Coming Soon!</h1>
+        <p>This feature is currently under progress or under maintainance.</p>
+    </div>
+    <div class="buttons"><a href="/" class="home-button">Back</a></div>
+</body>
+</html>

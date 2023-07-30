@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="icon" href="{% static 'image/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css\404.css'%}">
+    <title>Page Not Found</title>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo" speed="0.2" style=" filter: brightness(0.56);">
+            <source src="{% static 'video/bg.mp4'%}" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        <h1>Page Not Found</h1>
+        <p>The requested page could not be found.</p>
+        <div class="buttons"><a href="/" class="back-button">Back</a></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,295 @@
+@import url(https://db.onlinewebfonts.com/c/1d65b5646a9a805c62b037be6dd3a0a7?family=Cubano);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cubano";
+  letter-spacing: 3px;
+  background-color: #000000;
+  overflow: auto;
+}
+
+.game-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.bmx-container {
+  height: 255px;
+  position: relative;
+}
+
+.track {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f2f2f2;
+}
+.newimg{
+  height: 100%;
+  width: 100%;
+}
+.top-wall {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+}
+
+.road {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 102px;
+  background-color: #020202;
+  background-image: linear-gradient(180deg, rgb(255, 255, 255) 2px, transparent 2px);
+  background-size: 100% 25px;
+}
+.start-line,
+.finish-line {
+  position: absolute;
+  width: 4px;
+  background-color: #ffffff;
+}
+
+.start-line {
+  top: 60%;
+  left: 4%;
+  height: 40%;
+  transform: translate(-50%, 0);
+}
+
+.finish-line {
+  top: 60%;
+  left: 94%;
+  height: 40%;
+  transform: translate(-50%, 0);
+}
+
+  .question-container {
+    flex-grow: 1;
+    background-color: #00000070;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .rank-container {
+    background-color: #000000a3;
+    display: flex;
+    border: solid;
+    border-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .player-rank {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .player-name {
+    color: #ffffff;
+    margin-right: 10px;
+    font-family: cubano, sans-serif;
+    font-weight: bold;
+  }
+  
+  .timer-bar {
+    height: 10px;
+    background-color: #03c000;
+  }
+  
+  .question {
+    color: #ffffff;
+    font-family: cubano, sans-serif;
+    background-color: rgba(22, 22, 22, 0.553);
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .options {
+    font-family: cubano, sans-serif;
+    padding: 18px;
+  }
+  
+  .option {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #62009086;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: cubano, sans-serif;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .option:hover {
+    background-color: #002ba3;
+  }
+  
+  .option:disabled {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color:#44006686;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: cubano, sans-serif;
+    text-align: center;
+    cursor: pointer;    
+  }
+
+  .buttons {
+    display: flex;
+    font-family: cubano, sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+  }
+  
+  .control-button {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff7b00;
+    color: #ffffff;
+    font-family: cubano, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .control-button:hover {
+    background-color: rgb(253, 0, 0);
+  }
+  .control-button:disabled{
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #622f00;
+    color: #ffffff;
+    font-family: cubano, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .player-connected {
+    font-family: cubano, sans-serif;
+    color: rgb(0, 255, 0);
+  }
+  .player-disconnected {
+    color: red;
+  }
+
+  .timer{
+    position: fixed;
+    color: white;
+    font-family: cubano, sans-serif;
+    text-align: center;
+    margin-left: 44%;
+  }
+  
+  .overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 9999;
+  }
+
+  .loading-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+
+  .bike {
+    position: fixed;
+    height: 13%; 
+    z-index: 1; 
+  }
+  
+  .red-bike {
+    top: 15%;
+    left: 0%; /* + 9% -4.5% for skip for each score Red bike positioned at the back (left side of the track) */
+  }
+  
+  .blue-bike {
+    top: 22%;
+    left: 0%; 
+  }
+  .info-container {
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      position: relative; 
+      top: 2%;
+  }
+  .info-icon {
+      display: inline-block;
+      width: 32px; 
+      height: 32px;
+      cursor: pointer;
+      position: relative;
+  }
+
+  .info-icon img {
+      width: 100%; 
+      height: 100%;
+      border-radius: 50%; 
+      object-fit: cover; 
+  }
+
+  .info-icon:hover .tooltip {
+      display: block;
+  }
+
+  .tooltip {
+      display: none;
+      position: absolute;
+      top: 35px; 
+      left: 50%; 
+      text-align: center;
+      transform: translateX(-50%); 
+      background-color: #00000088;
+      color: #ffffff;
+      padding: 5px;
+      line-height: 20%;
+      border-radius: 5px;
+      width: 200px;
+  }

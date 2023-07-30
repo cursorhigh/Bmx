@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    {% load socialaccount %}
+    <link rel="icon" href="{% static 'image/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{%static 'css/unauth.css' %}">
+    <title>Unauthorized Access!</title>
+</head>
+<body>
+    <header>
+        <h1>BMX IQ Race - Unauthorized Access!</h1>
+    </header>
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo" speed="0.2" style=" filter: brightness(0.56);">
+            <source src="{% static 'video/bg.webm'%}" type="video/webm">
+        </video>
+    </div>
+    <main>
+        <div class="content">
+            <div class="pro"></div>
+            <h1>Unauthorized Access Attempt</h1>
+            <p>You don't have permission to access this page please login via google to continue.</p>
+        </div>
+        <div class="back-button" title="Back To Login" onclick="handleButtonClick(this.title)"></div>
+    </main>
+    <footer>
+        <p class="version">Version: 1.1.0</p>
+    </footer>
+    <script src="{%static 'js/unauth.js'%}"></script>
+</body>
+</html>

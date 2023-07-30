@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="icon" href="{% static 'image/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{%static 'css/leaderboard.css' %}">
+    <title>BMX IQ Race - Leaderboard</title>
+</head>
+<body>   
+    <header>
+        <h1>BMX IQ Race - Leaderboard</h1>
+    </header>
+    <video autoplay muted loop id="myVideo" speed="0.2" style="filter: brightness(0.56);">
+        <source src="{% static 'video/bg.webm'%}" type="video/webm">
+    </video>
+    <main>
+        <div class="search-bar">
+            <form action="#" method="post">
+                {% csrf_token %}
+                <input type="text" name="search" placeholder="Search Name" />
+                <input type="submit" value="Search" />
+            </form>
+        </div>
+        <div class="black-box">
+            <table>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                    <th>Wins</th>
+                </tr>
+                {% for user in leaderboard_data %}
+                    <tr>
+                        <td>{{ user.rank }}</td>
+                        <td>{{ user.username }}</td>
+                        <td>{{ user.score }}</td>
+                        <td>{{ user.wins }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <div class="back-button" title="Back To Home" onclick="handleButtonClick(this.title)"></div>
+    </main>
+    <footer>
+        <p class="version">Version: 1.1.0</p>
+    </footer>
+    <script src="{%static 'js/leaderboard.js' %}">
+    </script>
+</body>
+</html>

@@ -1,0 +1,302 @@
+[
+    {
+        "question": "What organization manages the Olympic Games?",
+        "options": [
+            "International Olympic Committee",
+            "UN Olympic Committee",
+            "Olympic Club International",
+            "World Olympic Organization"
+        ],
+        "correct_answer": "International Olympic Committee"
+    },
+    {
+        "question": "How many rings are there on the Olympic flag?",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "9"
+        ],
+        "correct_answer": "5"
+    },
+    {
+        "question": "When did Australia first participate in the Winter Olympics?",
+        "options": [
+            "1936",
+            "1968",
+            "1896",
+            "1928"
+        ],
+        "correct_answer": "1936"
+    },
+    {
+        "question": "Which country''s track-and-field team was banned from the 2016 Olympics?",
+        "options": [
+            "China",
+            "Zimbabwe",
+            "Russia",
+            "Germany"
+        ],
+        "correct_answer": "Russia"
+    },
+    {
+        "question": "What is the standard distance of the modern Olympic marathon?",
+        "options": [
+            "13 miles 100 yards",
+            "20 miles",
+            "25 miles",
+            "26 miles 385 yards"
+        ],
+        "correct_answer": "26 miles 385 yards"
+    },
+    {
+        "question": "At which Olympic Games did the Olympic flame first appear?",
+        "options": [
+            "Amsterdam 1928 Olympic Games",
+            "Antwerp 1920 Olympic Games",
+            "Athens 1896 Olympic Games",
+            "St. Louis 1904 Olympic Games"
+        ],
+        "correct_answer": "Amsterdam 1928 Olympic Games"
+    },
+    {
+        "question": "For which sport did Abhinav Bindra win the first individual gold medal for India?",
+        "options": [
+            "50-meter air rifle",
+            "300-meter free rifle",
+            "600-meter rifle",
+            "10-meter air rifle"
+        ],
+        "correct_answer": "10-meter air rifle"
+    },
+    {
+        "question": "The Olympic Village of which Olympic Games was later used to house juvenile offenders?",
+        "options": [
+            "Oslo 1952 Olympic Winter Games",
+            "Cortina d''Ampezzo 1956 Olympic Winter Games",
+            "Sapporo 1972 Olympic Winter Games",
+            "Lake Placid 1980 Olympic Winter Games"
+        ],
+        "correct_answer": "Lake Placid 1980 Olympic Winter Games"
+    },
+    {
+        "question": "Which country has won the most Olympic gold medals in men''s field hockey?",
+        "options": [
+            "India",
+            "Canada",
+            "Australia",
+            "Germany"
+        ],
+        "correct_answer": "India"
+    },
+    {
+        "question": "What year did the modern Olympics start?",
+        "options": [
+            "122 BCE",
+            "1642 CE",
+            "1968 CE",
+            "1896 CE"
+        ],
+        "correct_answer": "1896 CE"
+    },
+    {
+        "question": "Which Olympic athlete was awarded the Pierre de Coubertin medal in 2004?",
+        "options": [
+            "Abbey D''Agostino",
+            "Nikki Hamblin",
+            "Vanderlei Lima",
+            "Emil Z\u00e1topek"
+        ],
+        "correct_answer": "Vanderlei Lima"
+    },
+    {
+        "question": "Who was the first Chinese Winter Olympic gold medalist?",
+        "options": [
+            "Liu Xiang",
+            "Sun Dandan",
+            "\n\nWang Chunlu",
+            "\n\nYang Yang"
+        ],
+        "correct_answer": "\n\nYang Yang"
+    },
+    {
+        "question": "What does the Olympic motto \"Citius, altius, fortius\" mean?",
+        "options": [
+            "Faster, higher, stronger",
+            "For the love of the game",
+            "Achievement, fame, fortune",
+            "In pursuit of greatness"
+        ],
+        "correct_answer": "Faster, higher, stronger"
+    },
+    {
+        "question": "How many times has London hosted the Olympic Games?",
+        "options": [
+            "3",
+            "2",
+            "1",
+            "4"
+        ],
+        "correct_answer": "3"
+    },
+    {
+        "question": "Where is the headquarters of the International Olympic Committee located?",
+        "options": [
+            "Z\u00fcrich",
+            "Lausanne",
+            "London",
+            "Dubai"
+        ],
+        "correct_answer": "Lausanne"
+    },
+    {
+        "question": "When did China host the Olympic Games for the first time?",
+        "options": [
+            "1992",
+            "1984",
+            "2002",
+            "2008"
+        ],
+        "correct_answer": "2008"
+    },
+    {
+        "question": "When was drug testing introduced in the Olympics?",
+        "options": [
+            "1984",
+            "1968",
+            "1960",
+            "1988"
+        ],
+        "correct_answer": "1968"
+    },
+    {
+        "question": "To which Greek god were the ancient Olympic Games dedicated?",
+        "options": [
+            "Apollo",
+            "Zeus",
+            "Athena",
+            "Hera"
+        ],
+        "correct_answer": "Zeus"
+    },
+    {
+        "question": "Ulrich Salchow won the first Olympic gold medal awarded for which sport?",
+        "options": [
+            "Biathlon",
+            "Diving",
+            "Figure skating",
+            "Speed skating"
+        ],
+        "correct_answer": "Figure skating"
+    },
+    {
+        "question": "When were the last pure gold medals awarded at the Olympics?",
+        "options": [
+            "1960",
+            "1952",
+            "1938",
+            "1912"
+        ],
+        "correct_answer": "1912"
+    },
+    {
+        "question": "Where was the 2020 Summer Olympics supposed to be held?",
+        "options": [
+            "Seoul",
+            "Los Angeles",
+            "Paris",
+            "Tokyo"
+        ],
+        "correct_answer": "Tokyo"
+    },
+    {
+        "question": "How often are the Olympic Games held?",
+        "options": [
+            "1 year",
+            "8 years",
+            "4 years",
+            "12 years"
+        ],
+        "correct_answer": "4 years"
+    },
+    {
+        "question": "When did basketball become an Olympic event?",
+        "options": [
+            "1948",
+            "1932",
+            "1928",
+            "1936"
+        ],
+        "correct_answer": "1936"
+    },
+    {
+        "question": "Which Olympian was stripped of his medals for the 1912 Olympics?",
+        "options": [
+            "Ivan Tsikhan",
+            "Ben Johnson",
+            "Ross Rebagliati",
+            "Jim Thorpe"
+        ],
+        "correct_answer": "Jim Thorpe"
+    },
+    {
+        "question": "Which country does not dip its flag at the Olympics?",
+        "options": [
+            "United States",
+            "Belgium",
+            "Greece",
+            "Portugal"
+        ],
+        "correct_answer": "United States"
+    },
+    {
+        "question": "Which of the following is not an Olympic sport?",
+        "options": [
+            "skateboarding",
+            "wrestling",
+            "high jumping",
+            "swimming"
+        ],
+        "correct_answer": "skateboarding"
+    },
+    {
+        "question": "At which Olympic Games was the torch relay first introduced?",
+        "options": [
+            "Barcelona 1992 Olympic Games",
+            "London 1908 Olympic Games",
+            "Berlin 1936 Olympic Games",
+            "Paris 1900 Olympic Games"
+        ],
+        "correct_answer": "Berlin 1936 Olympic Games"
+    },
+    {
+        "question": "Where was the first Olympic Village built?",
+        "options": [
+            "Heidelburg West, Victoria",
+            "Olympiakyl\u00e4, Helsinki",
+            "Zappelon, Athens",
+            "Baldwin Hills, Los Angeles"
+        ],
+        "correct_answer": "Baldwin Hills, Los Angeles"
+    },
+    {
+        "question": "Who designed the Olympic flag?",
+        "options": [
+            "William Penny Brookes",
+            "Jules-Cl\u00e9ment Chaplain",
+            "\n\nJuan Ant\u00f3nio Samaranch",
+            "Pierre de Coubertin"
+        ],
+        "correct_answer": "Pierre de Coubertin"
+    },
+    {
+        "question": "Which color ring is not in Olympics Flag ?",
+        "options": [
+            "white",
+            "red",
+            "green",
+            "black"
+        ],
+        "correct_answer": "white"
+    }
+]

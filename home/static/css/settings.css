@@ -1,0 +1,138 @@
+@import url(https://db.onlinewebfonts.com/c/1d65b5646a9a805c62b037be6dd3a0a7?family=Cubano);
+  
+
+body {
+    font-family: "Cubano";
+    letter-spacing: 3px;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+header {
+    background-color: #33333370;
+    color: #fff;
+    padding: 20px;
+    backdrop-filter: blur(2px);
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+.buttons {
+  display: inline-block;
+}
+
+/* Adjust the margin to create spacing between the buttons */
+.buttons > div {
+  margin: 12px; /* Change this value as per your requirement */
+}
+.back-button {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: url('/static/gif/back.png') center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: solid;
+  border-color: white;
+  transform: scale(0.80);
+  transition: transform 0.3s;
+}
+
+.back-button:hover {
+  width: 80px;
+  height: 80px;
+  transform: scale(0.75);
+  box-shadow: 0 0 32px rgb(0, 64, 255);
+}
+
+.back-button:active {
+  transform: scale(0.95);
+}
+
+
+.reset-button {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: url('/static/gif/reset.png') center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.reset-button:hover {
+  width: 80px;
+  height: 80px;
+  transform: scale(0.75);
+  box-shadow: 0 0 32px rgb(255, 0, 0);
+}
+
+.reset-button:active {
+  transform: scale(0.95);
+}
+
+
+.suggest-button {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: url('/static/gif/suggest.png') center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.suggest-button:hover {
+  width: 80px;
+  height: 80px;
+  transform: scale(0.75);
+  box-shadow: 0 0 32px rgb(0, 64, 255);
+}
+
+.suggest-button:active {
+  transform: scale(0.95);
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+.version {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    background-color: #3333336f;
+}

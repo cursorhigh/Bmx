@@ -1,0 +1,351 @@
+@import url(https://db.onlinewebfonts.com/c/1d65b5646a9a805c62b037be6dd3a0a7?family=Cubano);
+  
+
+body {
+    font-family: "Cubano";
+    letter-spacing: 3px;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+header {
+    background-color: #33333370;
+    color: #fff;
+    padding: 20px;
+    backdrop-filter: blur(2px);
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+ 
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    
+}
+
+.version {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    background-color: #3333336f;
+}
+
+
+
+
+
+.logo-wrapper {
+    background: rgba(0, 0, 0, 0.5); /* Use rgba to set the background color with transparency */
+    width: 200px;
+    height: 200px;
+    margin-left: 3px;
+    margin-top: 3px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 10px rgba(134, 134, 134, 0.3);
+    transition: background 0.3s, box-shadow 0.3s; 
+}
+
+.logo-wrapper:hover {
+    background: rgba(0, 69, 173, 0.511); /* Change the background color to blue on hover */
+    box-shadow: 0 0 15px rgb(0, 64, 255); /* Add a glossy effect on hover */
+}
+
+.logo-wrapper img {
+    width: 100px;
+    height: 100px;
+}
+
+.glass-button{
+  background: rgba(0, 0, 0, 0.5); /* Use rgba to set the background color with transparency */
+  width: 40%;
+  height: 20rem;
+  margin-left: 3px;
+  margin-top: 3px;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px); /* Add a blur effect to create the translucent glass effect */
+  box-shadow: 0 0 10px rgba(134, 134, 134, 0.3);
+  transition: background 0.3s, box-shadow 0.3s; /* Add a smooth transition on hover */
+}
+
+
+.username {
+  font-size: 35px;
+  position: absolute;
+  top: 10%; /* Adjust this value to position the username vertically within the glass button */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 35px;
+  text-decoration: none; /* Remove the underline for anchor elements */
+  color: #90137a; /* Primary Color */
+  animation: rgbCycle 10s infinite; /* Add the RGB cycle animation */
+}
+
+@keyframes rgbCycle {
+  0% {
+      color: #90137a; /* Start with the primary color */
+  }
+  50% {
+      color: #902c24; /* Transition to the secondary color */
+  }
+  100% {
+      color: #840290; /* Transition to the accent color */
+  }
+}
+
+
+.gchat-button {
+  display: inline-block;
+  position: relative;
+  width: 65px;
+  height: 65px;
+  background: url('/static/gif/chat.png') center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.gchat-button:hover {
+  width: 65px;
+  height: 65px;
+  transform: scale(0.75);
+  box-shadow: 0 0 32px rgb(17, 255, 0);
+}
+
+.gchat-button:active {
+  transform: scale(0.95);
+}
+
+.play-button {
+  display: inline-block;
+  position: relative;
+  width: 65px;
+  height: 65px;
+  background: url('/static/gif/play.png') center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  
+}
+
+.play-button:hover {
+  width: 65px;
+  height: 65px;
+  transform: scale(0.75);
+  box-shadow: 0 0 32px rgb(0, 64, 255);
+}
+
+.play-button:active {
+  transform: scale(0.95);
+}
+
+.settings-button {
+  display: inline-block;
+  position: relative;
+  width: 65px;
+  height: 65px;
+  background: url('/static/gif/settings.png') center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.settings-button:hover {
+  width: 65px;
+  height: 65px;
+  transform: scale(0.75);
+  box-shadow: 0 0 32px rgb(0, 64, 255);
+}
+
+.settings-button:active {
+  transform: scale(0.95);
+}
+
+.leaderboard-button {
+  display: inline-block;
+  position: relative;
+  width: 65px;
+  height: 65px;
+  background: url('/static/gif/lead.png') center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.leaderboard-button:hover {
+  width: 65px;
+  height: 65px;
+  transform: scale(0.75);
+  box-shadow: 0 0 32px rgb(0, 64, 255);
+}
+
+.leaderboard-button:active {
+  transform: scale(0.95);
+}
+
+.logout-button {
+  display: inline-block;
+  position: relative;
+  width: 65px;
+  height: 65px;
+  background: url('/static/gif/logout.png') center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.logout-button:hover {
+  width: 65px;
+  height: 65px;
+  transform: scale(0.75);
+  box-shadow: 0 0 32px rgb(255, 0, 0);
+}
+
+.logout-button:active {
+  transform: scale(0.95);
+}
+
+
+.play-button,
+.gchat-button,
+.settings-button,
+.leaderboard-button,
+.logout-button {
+  margin-right: 20px; 
+  margin-top: 45px
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+.modal-dialog {
+    position: relative;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+  }
+
+  .modal-header {
+    padding: 11px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    backdrop-filter: blur(15px);
+    height: 4rem;
+    background: rgba(2, 2, 2, 0.511); 
+    box-shadow: 0 0 12px rgb(105, 105, 105);
+  }
+  
+  .modal-title {
+    left: 23px;
+    font-size: 20px;
+    letter-spacing: 0px;
+    position: absolute;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #ffffff;
+  }
+  
+  .modal-body {
+    padding: 11px;
+    background: rgba(3, 3, 3, 0.511); 
+    box-shadow: 0 0 12px rgb(105, 105, 105);
+    backdrop-filter: blur(2px);
+    border: none;
+    
+  }
+  
+  .btn-close {
+    color: #ffffff;
+    margin-top: 0px;
+    border: none;
+    left: 220px;
+    position: inherit;
+    background-color: #ff0000;
+    font-size: 24px;
+    opacity: 1;
+    backdrop-filter: blur(5px);
+    margin-left: 36%;
+}
+
+  .btn-close:hover {
+    background-color: #ff0000;
+    box-shadow: 0 0 12px rgb(195, 1, 1);
+
+  }
+
+.category-option {
+    display: inline-block;
+    width: calc(25% - 8px); 
+    margin: 15px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #f8f9fa;
+    font-size: 16px;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    background: rgba(0, 90, 224, 0.727); 
+    cursor: pointer;
+  }
+  
+  .category-option:hover {
+    background: rgba(0, 90, 224, 0.727); 
+    box-shadow: 0 0 12px rgb(0, 64, 255);
+    
+  }
+  

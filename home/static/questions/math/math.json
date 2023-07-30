@@ -1,0 +1,302 @@
+[
+    {
+        "question": "What symbol is used to symbolise percentage?",
+        "options": [
+            "=",
+            "%",
+            "!",
+            "/"
+        ],
+        "correct_answer": "%"
+    },
+    {
+        "question": "What is the sum of 18 \u2013 9?",
+        "options": [
+            "10",
+            "8",
+            "9",
+            "2"
+        ],
+        "correct_answer": "9"
+    },
+    {
+        "question": "How many sides does a pentagon have?",
+        "options": [
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "correct_answer": "5"
+    },
+    {
+        "question": "What is the product of 7 x 7?",
+        "options": [
+            "25",
+            "77",
+            "11",
+            "49"
+        ],
+        "correct_answer": "49"
+    },
+    {
+        "question": "What is the answer of 100\u00f7 50?",
+        "options": [
+            "2",
+            "3",
+            "10",
+            "5"
+        ],
+        "correct_answer": "2"
+    },
+    {
+        "question": "What is one half written as a fraction?",
+        "options": [
+            "1/2",
+            "2",
+            "2/1",
+            "2/3"
+        ],
+        "correct_answer": "1/2"
+    },
+    {
+        "question": "If the time is 12pm, how many hours is it until 6pm?",
+        "options": [
+            "4",
+            "6",
+            "18",
+            "12"
+        ],
+        "correct_answer": "6"
+    },
+    {
+        "question": "How many metres are in a kilometre?",
+        "options": [
+            "10",
+            "100",
+            "1000",
+            "10000"
+        ],
+        "correct_answer": "1000"
+    },
+    {
+        "question": "3,6,9,12,__? What is the next number in the sequence?",
+        "options": [
+            "16",
+            "15",
+            "14",
+            "9"
+        ],
+        "correct_answer": "15"
+    },
+    {
+        "question": "10 > 5. True or false?",
+        "options": [
+            "False",
+            "True",
+            "None",
+            "Can't say"
+        ],
+        "correct_answer": "True"
+    },
+    {
+        "question": "How many degrees is a right angle?",
+        "options": [
+            "60\u00b0",
+            "180\u00b0",
+            "90\u00b0",
+            "360\u00b0"
+        ],
+        "correct_answer": "90\u00b0"
+    },
+    {
+        "question": "How many faces does a cube have?",
+        "options": [
+            "6",
+            "8",
+            "3",
+            "12"
+        ],
+        "correct_answer": "6"
+    },
+    {
+        "question": "What is half of one half?",
+        "options": [
+            "0.2",
+            "1/2",
+            "1/4",
+            "3/2"
+        ],
+        "correct_answer": "1/4"
+    },
+    {
+        "question": "What is the answer of 121 \u00f7 11?",
+        "options": [
+            "23",
+            "15",
+            "11",
+            "14"
+        ],
+        "correct_answer": "11"
+    },
+    {
+        "question": "If a pizza has a diameter of 12 inches, what is its radius?",
+        "options": [
+            "4",
+            "3",
+            "12",
+            "6"
+        ],
+        "correct_answer": "6"
+    },
+    {
+        "question": "What is the square root of 1?",
+        "options": [
+            "1",
+            "2",
+            "-1",
+            "0"
+        ],
+        "correct_answer": "1"
+    },
+    {
+        "question": "What is the answer of 888 \u00f7 8?",
+        "options": [
+            "11",
+            "121",
+            "111",
+            "100"
+        ],
+        "correct_answer": "111"
+    },
+    {
+        "question": "What is the answer of 15 x 15?",
+        "options": [
+            "25",
+            "125",
+            "625",
+            "225"
+        ],
+        "correct_answer": "225"
+    },
+    {
+        "question": "How many seconds are there in 5 minutes?",
+        "options": [
+            "320s",
+            "60s",
+            "300s",
+            "30s"
+        ],
+        "correct_answer": "300s"
+    },
+    {
+        "question": "What theorem is used to find the length of an unknown side and the angle of a triangle?",
+        "options": [
+            "Heron's theorem",
+            "Euclid theorem",
+            "Pythagoras theorem",
+            "Triangle theorem"
+        ],
+        "correct_answer": "Pythagoras theorem"
+    },
+    {
+        "question": "Find average of (12,12,6)",
+        "options": [
+            "3",
+            "12",
+            "11",
+            "10"
+        ],
+        "correct_answer": "10"
+    },
+    {
+        "question": "What is the root of 4 ?",
+        "options": [
+            "2",
+            "4",
+            "1",
+            "-2"
+        ],
+        "correct_answer": "2"
+    },
+    {
+        "question": "What is root of 3 ?",
+        "options": [
+            "Integer",
+            "zero",
+            "Natural",
+            "Irrational"
+        ],
+        "correct_answer": "Irrational"
+    },
+    {
+        "question": "What is the condition for even numbers?",
+        "options": [
+            "divisible by 2",
+            "divisible by 4",
+            "divisible by 1",
+            " divisible by 3"
+        ],
+        "correct_answer": "divisible by 2"
+    },
+    {
+        "question": "Which is not a fraction ?",
+        "options": [
+            "24/13",
+            "26/1",
+            "1/12",
+            "32/29"
+        ],
+        "correct_answer": "26/1"
+    },
+    {
+        "question": "What represents 3 slice of a 12 slice pizza ?",
+        "options": [
+            "1/3",
+            "12/3",
+            "1/4",
+            "0.29"
+        ],
+        "correct_answer": "1/4"
+    },
+    {
+        "question": "How many radians in 180\u00b0?",
+        "options": [
+            "\u03c0/\u03c0",
+            "2\u03c0",
+            "\u03c0/2",
+            "\u03c0"
+        ],
+        "correct_answer": "\u03c0"
+    },
+    {
+        "question": "\u03c0 is of which type of number?",
+        "options": [
+            "Rational",
+            "Real",
+            "Integer",
+            "None"
+        ],
+        "correct_answer": "Real"
+    },
+    {
+        "question": "What is mean ?",
+        "options": [
+            "Average",
+            "Mode",
+            "Median",
+            "Max"
+        ],
+        "correct_answer": "Average"
+    },
+    {
+        "question": "What is answer of 25*15",
+        "options": [
+            "75",
+            "375",
+            "625",
+            "555"
+        ],
+        "correct_answer": "375"
+    }
+]

@@ -1,0 +1,217 @@
+@import url(https://db.onlinewebfonts.com/c/1d65b5646a9a805c62b037be6dd3a0a7?family=Cubano);
+body {
+    background-color: #000000;
+    font-family: "Cubano";
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow: auto;
+}
+.center {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00000000;
+  }
+
+header {
+    background-color: #33333370;
+    color: #fff;
+    padding: 20px;
+    backdrop-filter: blur(2px);
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.radar {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: url('/static/gif/radar.gif') center center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+
+.buttons a {
+    display: block;
+    margin-bottom: 10%;
+    text-align: center;
+    padding: 12px 70px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+    border: solid;
+    border-color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.buttons a:hover {
+    background-color: rgba(49, 0, 76, 0.641);
+    color: rgb(0, 255, 47);
+    border-color: rgb(250, 235, 255);
+}
+
+.waiting-message {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+    display: block;
+    margin-top: 10%;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+.version {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    background-color: #3333336f;
+}
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.centered-text {
+    position: fixed;
+    top: 47%;  
+    left: 50%; 
+    transform: translate(-50%, 322%);
+    text-align: center;
+    font-size: 34px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.wavc {
+    position: fixed;
+    border-radius:10px;
+    top: 33%;
+    background-color: #00000000;
+    height: 50%;
+
+}
+
+.opponentinfo {
+    margin-bottom: 10px;
+    padding: 0px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    position: fixed;
+    height: 20%;
+    background-color: #00000000;
+  }
+  
+  .opponentinfo h2 {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .opponentinfo p {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 3px;
+    margin-bottom: 15px;
+    bottom: 10%;
+  }
+  
+  .opponentinfo span {
+    font-weight: bold;
+    color: green;
+  }
+  
+  
+
+  .sudo-button {
+    position:fixed;
+    text-align: center;
+    display: none;
+    bottom:19%;
+    backdrop-filter: blur(2px);
+    margin-top: 20px;
+}
+
+.sudo-button a {
+    color: white;
+    text-decoration: none;
+    background-color: #0024b267;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 26px;
+    backdrop-filter: blur(15px);
+    transition: background-color 0.3s ease;
+}
+
+.sudo-button a:hover {
+    background-color: rgba(0, 0, 0, 0.641);
+    color: rgb(0, 255, 47);
+    box-shadow: 0 0 32px rgb(0, 64, 255);
+    backdrop-filter: blur(2px);
+}
+
+
+.back-button {
+    display: inline-block;
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    background: url('/static/gif/back.png') center center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 0%;
+    margin-top: 36.5%;
+    transition: transform 0.3s;
+    box-shadow: 0 0 12px rgb(0, 64, 255);
+  }
+  
+  .back-button:hover {
+    width: 65px;
+    height: 65px;
+    transform: scale(0.75);
+  }
+  
+  .back-button:active {
+    transform: scale(0.95);
+  }

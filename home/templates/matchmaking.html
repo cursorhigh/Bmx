@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/matchmaking.css' %}">
+    <link rel="icon" href="{% static 'image/favicon.ico' %}" type="image/x-icon">
+    <title>BMX IQ Race - Matchmaking</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>   
+    <header>
+        <h1>BMX IQ Race - Matchmaking</h1>
+    </header>
+    <video autoplay muted loop id="myVideo" speed="0.2" style="filter: brightness(0.56);">
+        <source src="{% static 'video/bg.webm'%}" type="video/webm">
+    </video>
+    <main>
+        <div class="opponentinfo">
+            <h2>Opponent Details</h2>
+            <p>Opponent ID: <span id="opponent-id"></span></p>
+            <p>Opponent Category: <span id="opponent-category"></span></p>
+        </div>
+        <div class="wavc">
+            <div class="radar"></div>
+        </div>
+        <p  id="countdown-timer" class="centered-text">Waiting for an opponent</p>
+        <div class="sudo-button">
+            <a id="join-button" href="#">Click To Join</a>
+        </div>
+        <div class="back-button" title="Back To Home" onclick="handleButtonClick(this.title)"></div>
+    </main>
+    <footer>
+        <p class="version">Version: 1.1.0</p>
+    </footer>
+    <input type="hidden" id="player-id" value="{{ playerid }}">
+    <input type="hidden" id="category" value="{{ category }}">
+    <script>
+        function deleteFromMatchmaking(playerID, category) {
+            $.ajax({
+                url: '/delete-matchmaking/',
+                type: 'POST',
+                data: {
+                    playerID: playerID,
+                    category: category
+                },
+                success: function(response) {
+                    console.log('Player deleted from matchmaking');
+                },
+                error: function() {
+                    console.log('Error occurred while deleting player from matchmaking.');
+                }
+            });
+        }
+
+        function handleButtonClick(buttonTitle) {
+            var playerID = '{{ request.GET.playerid }}';
+            var category = '{{ request.GET.category }}';
+
+            switch (buttonTitle) {
+            case "Back To Home":
+                deleteFromMatchmaking(playerID, category);
+                window.location.href = '/';
+                break;
+            }
+        }
+        $(document).ready(function() {
+            var playerID = '{{ request.GET.playerid }}';
+            var category = '{{ request.GET.category }}';
+            var countdown = 60; 
+            var countdownInterval;
+            $.ajax({
+                url: '/join-game/', 
+                type: 'GET',
+                data: {
+                    playerID: playerID,
+                    category: category
+                },
+                success: function(response) {
+                    $('#opponent-id').text(response.opponentID);
+                    $('#opponent-category').text(response.opponentCategory);
+                    var joinURL = '/mid?pid=' + playerID + '&oid=' + response.opponentID + '&category=' + category;
+                    $('#join-button').attr('href', joinURL);
+                    if (response.show) {
+                        $('.sudo-button').show();
+                        $('.opponentinfo').show();
+                    } else {
+                        alert('No opponent found Plz try again!');
+                        window.location.href = '/'; 
+                    }
+                    function updateCountdownTimer() {
+                        $('#countdown-timer').text('Join in ' + countdown); // Update the text with remaining time
+                    }
+                    countdownInterval = setInterval(function() {
+                        if (countdown > 0) {
+                            countdown--;
+                            updateCountdownTimer(); 
+                        } else {
+                            clearInterval(countdownInterval); 
+                            deleteFromMatchmaking(playerID, category);
+                            window.location.href = '/'; 
+                        }
+                    }, 1000);
+                },
+                error: function() {
+                    console.log('Error occurred while sending data to the server.');
+                }
+            });
+            $('#join-button').click(function() {
+                clearInterval(countdownInterval); 
+            });
+        });
+    </script>
+</body>
+</html>

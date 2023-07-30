@@ -1,0 +1,240 @@
+@import url(https://db.onlinewebfonts.com/c/1d65b5646a9a805c62b037be6dd3a0a7?family=Cubano);
+
+
+body {
+    font-family: "Cubano";
+    letter-spacing: 3px;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+header {
+    background-color: #33333370;
+    color: #fff;
+    padding: 20px;
+    backdrop-filter: blur(2px);
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+.back-button {
+  display:block;
+  position: relative;
+  width: 90px;
+  height: 90px;
+  background: url('/static/gif/back.png') center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin-left: 0;
+  border: solid;
+  border-color: white;
+  top: 15px;
+  transform: scale(0.80);
+  transition: transform 0.3s;
+}
+
+.back-button:hover {
+  width: 90px;
+  height: 90px;
+  transform: scale(0.75);
+  box-shadow: 0 0 32px rgb(0, 64, 255);
+}
+
+.back-button:active {
+  transform: scale(0.95);
+}
+
+.chatarea {
+  background-color: rgba(0, 13, 126, 0.399); 
+  border-radius: 10px;
+  width: 50%;
+  height: 460px;
+  margin: 0 auto;
+  margin-top: 20px;
+  overflow: visible;
+  backdrop-filter: blur(2px); 
+  box-shadow: 0 0 12px rgb(0, 33, 133);
+}
+
+.msgbox {
+  background-color: rgba(36, 36, 36, 0.51);
+  border-radius: 10px;
+  width: 95%;
+  height: 75%;
+  margin: 0 auto;
+  margin-top: 20px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  backdrop-filter: blur(2px); 
+  box-shadow: 0 0 12px rgb(0, 0, 0);
+
+}
+.msgbox::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.msgbox::-webkit-scrollbar-track {
+  width: 0.5em;
+  background: rgba(0, 0, 0, 0.715);
+}
+
+.msgbox::-webkit-scrollbar-thumb {
+  background-color: #0d00ff6d;
+  border-radius: 2em;
+  backdrop-filter: blur(2px); 
+  border: 3px solid transparent;
+}
+
+.msgbox::-webkit-scrollbar-thumb:hover {
+  width: 2.8em;
+  background-color: #0d00ff;
+  backdrop-filter: blur(2px); 
+  box-shadow: 0 0 12px rgb(0, 60, 255);
+}
+
+.inputbox {
+  background-color: rgba(0, 0, 0, 0.51);
+  border-radius: 10px;
+  width: 85%;
+  height: 12%;
+  margin-left: 2.5% ;
+  margin-top: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(2px); 
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.24);
+}
+
+.chat-input {
+  width: 100%;
+  height: 33%;
+  border: none;
+  outline: none;
+  padding: 8px; 
+  margin-top: 10px;
+  text-align: center;
+  font-family: Helvetica;
+  color: rgb(131, 162, 255);
+  background-color: #cfcfcf00;
+  font-size: 18px;
+  overflow:hidden;
+  resize: none; 
+}
+.sendmsg {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-left: 90% ;
+  margin-top: 20px;
+  bottom: 16%;
+  background: url('/static/gif/send.png') center center no-repeat;
+  background-size:contain;
+  border-radius: 0;
+  transition: transform 0.3s;
+}
+
+.sendmsg:hover {
+  width: 50px;
+  height: 50px;
+  transform: scale(0.75);
+
+}
+
+.sendmsg:active {
+  transform: scale(0.95);
+}
+
+
+
+.mine-container {
+  background-color: rgba(0, 0, 0, 0.352); 
+  padding: 8px;
+  margin-top: 15px;
+  width: 80%;
+  margin-left: 10.5% ;
+  margin-bottom: 15px;
+  box-shadow: 0 0 12px #0055ffd1;
+  border-radius: 5px;
+}
+.other-container {
+  background-color: rgba(0, 0, 0, 0.559); 
+  padding: 8px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 5.5%;
+  width: 80%;
+  box-shadow: 0 0 12px rgba(0, 150, 10, 0.781);
+  border-radius: 5px;
+}
+
+.username {
+  color: rgba(0, 150, 10, 0.781);
+  font-size: 18px;
+}
+
+.message {
+  color: #ffffff;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-family: Helvetica;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.sender-message {
+  word-wrap: break-word;
+  text-align: right;
+  font-family: Helvetica;
+  overflow-wrap: break-word;
+  padding: 5px;
+  color: #fff;
+}
+
+.yusername {
+  font-weight: bold;
+  text-align: right;
+  color: #0055ffd1; 
+  font-size: 18px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+.version {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    background-color: #3333336f;
+}
+
+
+

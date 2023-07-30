@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% load static %}
+  <title>BMX IQ Race Game</title>
+  <link rel="stylesheet" href="{% static 'css\game.css'%}">
+  <link rel="icon" href="{% static 'image/favicon.ico' %}" type="image/x-icon">
+</head>
+<body>
+  <div class="overlay" id="overlay">
+    <div class="loading-message">Waiting for Opponent to finish</div>
+  </div>
+  <div class="game-container">
+    <div class="bmx-container">
+      <div class="track">
+        <div class="top-wall">
+          <img src="{%static 'image\top wall.png'%}" class="newimg">
+        </div>
+        <img src="{% static 'image\redbike f.png' %}" id="red-bike" class="bike red-bike">
+        <img src="{% static 'image\bluebike f.png' %}" id="blue-bike" class="bike blue-bike">
+        <div class="road"></div>
+        <div class="start-line"></div>
+        <div class="finish-line"></div>
+      </div>
+    </div>
+    <div class="question-container">
+        <video autoplay muted loop id="background-video" speed="0.001" style=" filter: brightness(0.76);">
+            <source src="{% static 'video/bg.webm'%}" type="video/webm">
+        </video>
+      <div class="rank-container">
+        <div class="player-rank">
+          <span id="player-name" class="player-name">You</span>
+          <span id="player-score" class="player-score">Score: 0</span>
+        </div>
+        <div class="timer">
+          <span id="timer-display">waiting for opponent: 2:00</span>
+        </div>
+        <div class="player-rank">
+          <span id="opponent-name" class="player-name">Opponent</span>
+          <span id="opponent-score" class="player-score">Score: 0</span>
+        </div>
+      </div>
+      <div class="timer-bar"></div>
+      <div class="question">
+        <h2 id="question-title">Question Title</h2>
+        <p id="question-content">Question content goes here...</p>
+      </div>
+      <div class="info-container">
+        <div class="info-icon">
+            <img src="{%static 'image\information32.png'%}" alt="Info Icon">
+            <div class="tooltip">
+                <p>-:Instructions:-</p>
+                <p>Correct       ➟  +10 pts.</p>
+                <p>Incorrect     ➟  -0 pts.</p>
+                <p>Skip          ➟  -5 pts.</p>
+                <p>Left mid game ➟  -1 Win</p>
+                <p>Time/Que      ➟  20 s</p>
+            </div>
+        </div>
+      </div>
+      <div class="options">
+        <button id="option-1" class="option" onclick="sAnswer(1)" disabled></button>
+        <button id="option-2" class="option" onclick="sAnswer(2)" disabled></button>
+        <button id="option-3" class="option" onclick="sAnswer(3)" disabled></button>
+        <button id="option-4" class="option" onclick="sAnswer(4)" disabled></button>
+      </div>   
+      <div class="buttons">
+        <button class="control-button" id="surrender-button" disabled>Surrender</button>
+        <button class="control-button" id="skip-button" disabled>Skip(5 skips left)</button>
+      </div>
+    </div>
+  </div>
+  {% csrf_token %}
+  <script src="{% static 'js\game.js' %}"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

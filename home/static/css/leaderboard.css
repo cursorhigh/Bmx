@@ -1,0 +1,169 @@
+@import url(https://db.onlinewebfonts.com/c/1d65b5646a9a805c62b037be6dd3a0a7?family=Cubano);
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    z-index: 100;
+  }
+body {
+    background-color: #000000;
+    font-family: "Cubano";
+    letter-spacing: 3px;
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    
+}
+.center {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00000000;
+    
+}
+
+
+header {
+    background-color: #33333370;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(2px);
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    
+}
+
+
+
+.version {
+    font-size: 24px;
+    position: relative;
+    color: white;
+    text-align: center;
+    background-color: #3333336f;
+    backdrop-filter: blur(2px);
+}
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.black-box {
+    background-color: rgba(0, 12, 77, 0.559); /* Semi-transparent initial color (#90137a) */
+    border-radius: 10px;
+    width: 50%;
+    height: 460px;
+    margin: 0 auto;
+    margin-top: 20px;
+    overflow: auto;
+    backdrop-filter: blur(2px); 
+    box-shadow: 0 0 12px rgb(0, 64, 255);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.367);
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 4px solid #ddd;
+}
+
+
+.back-button {
+    display: inline-block;
+    position: relative;
+    width: 65px;
+    height: 65px;
+    background: url('/static/gif/back.png') center center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 47.0%;
+    top: 15px;
+    transition: transform 0.3s;
+    box-shadow: 0 0 12px rgb(0, 64, 255);
+  }
+  
+  .back-button:hover {
+    width: 65px;
+    height: 65px;
+    transform: scale(0.75);
+  }
+  
+  .back-button:active {
+    transform: scale(0.95);
+  }
+
+
+
+.search-bar {
+    position: relative;
+    margin-top: 1%;
+    margin-right: 5%;
+    text-align: center;
+
+}
+
+.search-bar input[type="text"] {
+    left: 3%;
+    margin-right: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    width: 300px;
+    height: 38px;
+    background-color: rgba(0, 0, 0, 0.659);
+    border:solid rgb(0, 64, 255);
+    border-radius: 3px;
+}
+
+.search-bar input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.688);
+}
+.search-bar input[type="submit"] {
+    position: absolute;
+    margin-left: 10px;
+    width: 80px;
+    height: 45px;
+    font-size: 18px;
+    background-color: #00000000;
+    color: white;
+    border: solid;
+    border-color: rgb(0, 64, 255);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-bar input[type="submit"]:hover {
+    background-color: rgba(49, 0, 76, 0.641);
+    color: rgb(0, 64, 255);
+    border-color: rgb(250, 235, 255);    
+}
