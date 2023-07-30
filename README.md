@@ -17,8 +17,5 @@ BMX IQ Race is an exciting online gaming platform that challenges players' knowl
 - User-friendly interface with an attractive design.
 - Developed with Django for robust backend and front end.
 
-## License
-
-[License Name] - [License URL, if applicable]
 
 Happy gaming and learning! 🚀🚴‍♂️
