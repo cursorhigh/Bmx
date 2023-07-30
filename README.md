@@ -16,6 +16,13 @@ BMX IQ Race is an exciting online gaming platform that challenges players' knowl
 - Seamless and interactive experience powered by WebSockets for real-time communication during gameplay.
 - User-friendly interface with an attractive design.
 - Developed with Django for robust backend and front end.
+## New Updates
+
+- **Global Chat Feature:** We've added a global chat feature that allows players from all over the world to interact, share tips, and make new friends while enjoying the game.
+
+- **Enhanced UI:** Our UI has undergone significant improvements to provide a more intuitive and visually appealing experience for players. Navigating through the game is now even more enjoyable!
+
+- **Smooth Animations:** To make the gameplay more immersive, we've added smooth animations that enhance the overall gaming experience. Enjoy the seamless transitions and engaging visuals as you race to victory.
 
 
 Happy gaming and learning! 🚀🚴‍♂️
