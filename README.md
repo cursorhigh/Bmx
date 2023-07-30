@@ -1,6 +1,6 @@
 # BMX IQ Race - Online Gaming Platform
 
-![]([https://ibb.co/4KXybXG])
+![BMX IQ Race](https://i.ibb.co/XjKBnKg/circle-logo-1.png)
 
 ## BMX IQ Race Links
 
