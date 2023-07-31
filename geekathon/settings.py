@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-(wzal2!17^g)w4e_6^_*4t92n5zq=-6gz7*_+u^s+3@#yfh6y9'
+SECRET_KEY = <YOur key : )>
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -93,7 +93,7 @@ CHANNEL_LAYERS = {
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://default:NkuyfcTFzYVp35TtVOmnmNAycXufVbqW@redis-14903.c212.ap-south-1-1.ec2.cloud.redislabs.com:14903/0',
+        'LOCATION': 'Redis directory : )',
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         },
