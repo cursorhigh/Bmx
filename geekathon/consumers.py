@@ -6,7 +6,7 @@ import random
 import os
 import time
 import redis
-redis_client = redis.from_url('redis://default:NkuyfcTFzYVp35TtVOmnmNAycXufVbqW@redis-14903.c212.ap-south-1-1.ec2.cloud.redislabs.com:14903/0')
+redis_client = redis.from_url('Redis access here : ))
 class GameConsumer(AsyncWebsocketConsumer):
     async def connect(self):
         self.pid = self.scope['url_route']['kwargs']['playerid']
