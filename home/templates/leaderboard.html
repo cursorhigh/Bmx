@@ -27,6 +27,8 @@
                     <th>Rank</th>
                     <th>Name</th>
                     <th>Score</th>
+                    <th>Est_Score</th>
+                    <th>WinRate</th>
                     <th>Wins</th>
                 </tr>
                 {% for user in leaderboard_data %}
@@ -34,6 +36,8 @@
                         <td>{{ user.rank }}</td>
                         <td>{{ user.username }}</td>
                         <td>{{ user.score }}</td>
+                        <td>{{ user.pscore }}</td>
+                        <td>{{ user.winrate }} %</td>
                         <td>{{ user.wins }}</td>
                     </tr>
                 {% endfor %}

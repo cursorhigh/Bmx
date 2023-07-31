@@ -1,28 +1,22 @@
 from django.shortcuts import render, redirect,get_object_or_404
-from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from users.models import User
 from matchmaking.models import matchmaking
 from allauth import socialaccount
 from allauth.socialaccount.models import SocialAccount
-import random
 import time
 from django.core.cache import cache
-from channels.layers import get_channel_layer
-from asgiref.sync import async_to_sync
 from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse,HttpResponseBadRequest,HttpResponseRedirect
-
 from django.shortcuts import render
 from django.http import Http404
 from functools import wraps
 from django.db.models import F
-
 from users.models import User
 def home(request):
     return render(request,'home.html')
 def update_ranks():
-    users = User.objects.order_by('-wins','-score','username')
+    users = User.objects.order_by('-winrate','-wins','-score','-pscore','username')
     for rank, user in enumerate(users, start=1):
         user.rank = rank
         user.save()
@@ -54,8 +48,7 @@ def comingsoon(request):
 
 @require_superuser
 def rerank(request):
-    players = User.objects.all()
-    updated_players = update_ranks(players)
+    updated_players = update_ranks()
     zen=[]
     for player in updated_players:
         zen.append(f"Player: {player.username}, Rank: {player.rank}")
@@ -84,9 +77,13 @@ def suggest(request):
     return render(request,'suggest.html')
 @require_auth
 def reset(request):
-    current_user =User.objects.get(pk=request.user)
+    current_user = User.objects.get(pk=request.user)
     current_user.score = 0
     current_user.wins=0
+    current_user.winrate=0.0
+    current_user.pscore=0
+    current_user.total=0
+    current_user.lscore=0
     current_user.save()
     update_ranks()
     return redirect('/settings')
@@ -177,8 +174,7 @@ def mid(request):
 @require_auth
 def gchatmid(request):
     if request.method == 'GET':
-        username= request.GET.get('username')
-        nurl = f"/globalchat?username={username}"
+        nurl = f"/globalchat"
         return HttpResponseRedirect(nurl)
 @require_auth
 def logout_now(request):
@@ -204,10 +200,10 @@ def google_login_callback(request):
 
     person.save()
     return redirect('/')
-
+from django.views.decorators.csrf import csrf_protect
 @require_auth
+@csrf_protect
 def leaderboard(request):
-    leaderboard_data = User.objects.all().order_by('score') 
     if request.method == 'POST':
         query = request.POST.get('search')
         if query:
@@ -244,7 +240,7 @@ def game_view(request):
 
 @require_auth
 def chat_view(request):
-    username= request.GET.get('username')
+    username = request.user.username
     context = {
         'username':username
     }
@@ -262,12 +258,20 @@ def update_score(request):
             winner_id = winner_id + '@gmail.com'
             winner = get_object_or_404(User, email=winner_id)
             winner.score += player1_score
-            winner.wins += 1
+            winner.wins +=1
+            winner.total +=1
+            winner.winrate = round(((winner.wins) / (winner.total)) * 100, 1)
+            winner.pscore = int((winner.winrate*winner.lscore)/100)
+            winner.lscore = player1_score
             winner.save()
         elif winner_id != player1_id:
             player1_id = player1_id + '@gmail.com'
             player1 = get_object_or_404(User, email=player1_id)
             player1.score += player1_score
+            player1.total += 1
+            player1.winrate = round(((player1.wins)/(player1.total))*100,1)
+            player1.pscore = int((player1.winrate)*(player1.lscore)/100)
+            player1.lscore = player1_score
             player1.save()
         updated_players = update_ranks()
         return JsonResponse({'message': 'Game results handled successfully'})
@@ -284,11 +288,19 @@ def surrender_score(request):
         winner_id = winnerid + '@gmail.com'
         winner = get_object_or_404(User, email=winner_id)
         winner.score += winnerscore
+        winner.total +=1
         winner.wins += 1
+        winner.winrate = round(((winner.wins)/(winner.total))*100,1)
+        winner.pscore = int((winner.winrate*winner.lscore)/100)
+        winner.lscore = winnerscore
         winner.save()
         youid = youid + '@gmail.com'
         youone = get_object_or_404(User, email=youid)
         youone.score += youscore
+        youone.total += 1
+        youone.winrate = round(((youone.wins)/(youone.total))*100,1)
+        youone.pscore = int((youone.winrate*youone.lscore)/100)
+        youone.lscore = youscore
         youone.save()
         updated_players = update_ranks()
         return JsonResponse({'message': 'Scores updated successfully'})
@@ -305,6 +317,10 @@ def left_score(request):
         winner = get_object_or_404(User, email=winner_id)
         winner.score += winnerscore
         winner.wins += 1
+        winner.total +=1
+        winner.winrate = round(((winner.wins)/(winner.total))*100,1)
+        winner.pscore = int((winner.winrate*winner.lscore)/100)
+        winner.lscore = winnerscore
         winner.save()
         youid = youid + '@gmail.com'
         youone = get_object_or_404(User, email=youid)
@@ -314,6 +330,10 @@ def left_score(request):
         youone.wins-=1
         if youone.wins<0:
             youone.wins=0
+        youone.total += 1
+        youone.winrate = round(((youone.wins)/(youone.total))*100,1)
+        youone.pscore = int((youone.winrate*youone.lscore)/100)
+        youone.lscore = (0)
         youone.save()
         updated_players = update_ranks()
         return JsonResponse({'message': 'Scores updated successfully'})

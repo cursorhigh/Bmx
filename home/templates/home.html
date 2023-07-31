@@ -92,7 +92,7 @@
                     },
                     success: function(response) {
                         $('#username').text(response.username)
-                        var joinURL = '/gchatmid?username='+ response.username;
+                        var joinURL = '/gchatmid';
                         if (response.status) {
                             window.location.href = joinURL
                         } else {
