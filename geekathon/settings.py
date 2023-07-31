@@ -57,9 +57,9 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'geekathon.404now.Custom404Middleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'geekathon.admin_access_middleware.AdminAccessMiddleware',
 ]
 
 ROOT_URLCONF = 'geekathon.urls'

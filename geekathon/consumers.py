@@ -3,7 +3,6 @@ from channels.generic.websocket import AsyncWebsocketConsumer,WebsocketConsumer
 from django.core.cache import cache
 import json
 import random
-from asgiref.sync import async_to_sync
 import os
 import time
 import redis
@@ -41,11 +40,11 @@ class GameConsumer(AsyncWebsocketConsumer):
                 await asyncio.sleep(5)
                 times += 1
         if times == 6:
+            cache.delete(self.pid)
             await self.channel_layer.group_discard(
                 self.room_group_name,
                 self.channel_name
             )
-            cache.delete(self.pid)
             message = 'Opponent left. Redirecting to the homepage...'
             response = {
                 'type': 'notify_disconnection',
@@ -53,9 +52,9 @@ class GameConsumer(AsyncWebsocketConsumer):
             }
             await self.send(text_data=json.dumps(response))
         if self.title == 'Math':
-            file_path = 'home\static\questions\math\math.json'
+            file_path = os.path.join('home', 'static', 'questions', 'math', 'math.json')
         elif self.title == 'Olympics':
-            file_path= 'home\static\questions\olympics\olympics.json'
+            file_path = os.path.join('home', 'static', 'questions', 'olympics', 'olympics.json')
         with open(file_path,'r') as f:
             self.questions_list = json.load(f)
         if self.pid==player_name:
@@ -75,8 +74,7 @@ class GameConsumer(AsyncWebsocketConsumer):
 
 
     async def send_seed(self, event):
-        seed_value = event['seed_value']
-        self.seed_value = seed_value
+        self.seed_value = event['seed_value']
         random.seed(self.seed_value)
         random.shuffle(self.questions_list)
         self.questions_list = self.questions_list[:15]
@@ -89,6 +87,7 @@ class GameConsumer(AsyncWebsocketConsumer):
         youid=self.pid
         youscore=self.player_score
         cache.delete(self.pid)
+        cache.set(f'{self.pid}_done', {'done': True, 'score':self.player_score}, timeout=180)
         message = {
             'type': 'player_left',
             'message': 'Your opponent has left the game. Redirecting to the homepage...',
@@ -122,7 +121,10 @@ class GameConsumer(AsyncWebsocketConsumer):
                 }
                 await self.channel_layer.group_send(self.room_group_name, message)
             else:
-                await self.send_question()
+                if self.totalq<=10:
+                    await self.send_question()
+                else:
+                    await self.gamerover()
 
         elif data['type'] == 'request_question':
             if self.totalq<=10:
@@ -143,10 +145,10 @@ class GameConsumer(AsyncWebsocketConsumer):
                     'bywho':self.pid
                 }
                 await self.channel_layer.group_send(self.room_group_name, message)
-                await self.send_question()
 
     async def send_score(self,event):
         if event['bywho']!=self.pid:
+            cache.delete(self.pid)
             opponent_score = event['opponent_score'] 
             self.oppnentscore=opponent_score
             await self.send(text_data=json.dumps({
@@ -166,6 +168,7 @@ class GameConsumer(AsyncWebsocketConsumer):
         if self.current_question_index < len(self.questions_list):
             current_question = self.questions_list[self.current_question_index]
             self.current_question_index += 1
+            print(self.current_question_index)
             options = current_question['options']
             random.shuffle(options)
             message = {
@@ -185,8 +188,8 @@ class GameConsumer(AsyncWebsocketConsumer):
         }
         await self.send(text_data=json.dumps(response))
 
-
     async def player_left(self, event):
+        cache.delete(f'{self.oid}_done')
         await self.send(text_data=json.dumps(event))
 
 
@@ -221,7 +224,7 @@ class GameConsumer(AsyncWebsocketConsumer):
         await self.send(text_data=json.dumps(message))
     async def gamerover(self):
         await self.send(text_data=json.dumps({'type': 'game_over'}))
-        cache.set(f'{self.pid}_done', {'done': True, 'score':self.player_score}, timeout=None)
+        cache.set(f'{self.pid}_done', {'done': True, 'score':self.player_score}, timeout=180)
         opponent_pid = self.oid
         cache_data = cache.get(f'{self.pid}_done')
         if cache_data and cache_data['done']:
@@ -237,6 +240,7 @@ class GameConsumer(AsyncWebsocketConsumer):
                     winner = f'{opponent_pid} ,opponent won the game'
                 else:
                     winner = "It's a tie! Baby"
+                cache.delete(f'{opponent_pid}_done')
                 message = {
                     'type': 'game_results',
                     'winner': winner,
@@ -246,8 +250,6 @@ class GameConsumer(AsyncWebsocketConsumer):
                     'player2_score': opponent_score
                 }
                 await self.send(text_data=json.dumps(message))
-                cache.delete(f'{opponent_pid}_done')
-
                 break  
             await asyncio.sleep(2)
 
