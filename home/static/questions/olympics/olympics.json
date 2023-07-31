@@ -1,302 +1,313 @@
 [
     {
-        "question": "What organization manages the Olympic Games?",
-        "options": [
-            "International Olympic Committee",
-            "UN Olympic Committee",
-            "Olympic Club International",
-            "World Olympic Organization"
-        ],
-        "correct_answer": "International Olympic Committee"
+      "question": "Which city hosted the first modern Olympic Games in 1896?",
+      "options": [
+        "Paris, France",
+        "London, United Kingdom",
+        "Athens, Greece",
+        "Berlin, Germany"
+      ],
+      "correct_answer": "Athens, Greece"
     },
     {
-        "question": "How many rings are there on the Olympic flag?",
-        "options": [
-            "5",
-            "6",
-            "7",
-            "9"
-        ],
-        "correct_answer": "5"
+      "question": "How often are the Summer Olympics held?",
+      "options": [
+        "Every 2 years",
+        "Every 3 years",
+        "Every 4 years",
+        "Every 5 years"
+      ],
+      "correct_answer": "Every 4 years"
     },
     {
-        "question": "When did Australia first participate in the Winter Olympics?",
-        "options": [
-            "1936",
-            "1968",
-            "1896",
-            "1928"
-        ],
-        "correct_answer": "1936"
+      "question": "Which athlete won the most gold medals in a single Olympics?",
+      "options": [
+        "Usain Bolt",
+        "Michael Phelps",
+        "Carl Lewis",
+        "Nadia Comăneci"
+      ],
+      "correct_answer": "Michael Phelps"
     },
     {
-        "question": "Which country''s track-and-field team was banned from the 2016 Olympics?",
-        "options": [
-            "China",
-            "Zimbabwe",
-            "Russia",
-            "Germany"
-        ],
-        "correct_answer": "Russia"
+      "question": "In which year did the first Winter Olympics take place?",
+      "options": [
+        "1904",
+        "1924",
+        "1932",
+        "1948"
+      ],
+      "correct_answer": "1924"
     },
     {
-        "question": "What is the standard distance of the modern Olympic marathon?",
-        "options": [
-            "13 miles 100 yards",
-            "20 miles",
-            "25 miles",
-            "26 miles 385 yards"
-        ],
-        "correct_answer": "26 miles 385 yards"
+      "question": "Which country has won the most gold medals in the history of the Summer Olympics?",
+      "options": [
+        "United States",
+        "China",
+        "Soviet Union",
+        "Great Britain"
+      ],
+      "correct_answer": "United States"
     },
     {
-        "question": "At which Olympic Games did the Olympic flame first appear?",
-        "options": [
-            "Amsterdam 1928 Olympic Games",
-            "Antwerp 1920 Olympic Games",
-            "Athens 1896 Olympic Games",
-            "St. Louis 1904 Olympic Games"
-        ],
-        "correct_answer": "Amsterdam 1928 Olympic Games"
+      "question": "In which sport can you win the Davis Cup?",
+      "options": [
+        "Tennis",
+        "Soccer",
+        "Basketball",
+        "Golf"
+      ],
+      "correct_answer": "Tennis"
     },
     {
-        "question": "For which sport did Abhinav Bindra win the first individual gold medal for India?",
-        "options": [
-            "50-meter air rifle",
-            "300-meter free rifle",
-            "600-meter rifle",
-            "10-meter air rifle"
-        ],
-        "correct_answer": "10-meter air rifle"
+      "question": "Which Indian athlete won a gold medal in the 2008 Beijing Olympics?",
+      "options": [
+        "Abhinav Bindra",
+        "Sushil Kumar",
+        "Mary Kom",
+        "Vijender Singh"
+      ],
+      "correct_answer": "Abhinav Bindra"
     },
     {
-        "question": "The Olympic Village of which Olympic Games was later used to house juvenile offenders?",
-        "options": [
-            "Oslo 1952 Olympic Winter Games",
-            "Cortina d''Ampezzo 1956 Olympic Winter Games",
-            "Sapporo 1972 Olympic Winter Games",
-            "Lake Placid 1980 Olympic Winter Games"
-        ],
-        "correct_answer": "Lake Placid 1980 Olympic Winter Games"
+      "question": "The 2020 Summer Olympics were postponed and held in 2021. In which city were they supposed to be held originally?",
+      "options": [
+        "Rio de Janeiro, Brazil",
+        "Tokyo, Japan",
+        "London, United Kingdom",
+        "Paris, France"
+      ],
+      "correct_answer": "Tokyo, Japan"
     },
     {
-        "question": "Which country has won the most Olympic gold medals in men''s field hockey?",
-        "options": [
-            "India",
-            "Canada",
-            "Australia",
-            "Germany"
-        ],
-        "correct_answer": "India"
+      "question": "Which country hosted the first Winter Olympics?",
+      "options": [
+        "Canada",
+        "Switzerland",
+        "Austria",
+        "France"
+      ],
+      "correct_answer": "France"
     },
     {
-        "question": "What year did the modern Olympics start?",
-        "options": [
-            "122 BCE",
-            "1642 CE",
-            "1968 CE",
-            "1896 CE"
-        ],
-        "correct_answer": "1896 CE"
+      "question": "The Olympic rings symbolize the unity of the five continents. Which continent is represented by the color blue?",
+      "options": [
+        "Africa",
+        "Asia",
+        "Europe",
+        "Australia"
+      ],
+      "correct_answer": "Europe"
     },
     {
-        "question": "Which Olympic athlete was awarded the Pierre de Coubertin medal in 2004?",
-        "options": [
-            "Abbey D''Agostino",
-            "Nikki Hamblin",
-            "Vanderlei Lima",
-            "Emil Z\u00e1topek"
-        ],
-        "correct_answer": "Vanderlei Lima"
+      "question": "Which Indian badminton player won a silver medal in the women's singles at the 2016 Rio Olympics?",
+      "options": [
+        "Saina Nehwal",
+        "Pusarla Venkata Sindhu",
+        "Jwala Gutta",
+        "Ashwini Ponnappa"
+      ],
+      "correct_answer": "Pusarla Venkata Sindhu"
     },
     {
-        "question": "Who was the first Chinese Winter Olympic gold medalist?",
-        "options": [
-            "Liu Xiang",
-            "Sun Dandan",
-            "\n\nWang Chunlu",
-            "\n\nYang Yang"
-        ],
-        "correct_answer": "\n\nYang Yang"
+      "question": "Which city hosted the 2016 Summer Olympics?",
+      "options": [
+        "London, United Kingdom",
+        "Rio de Janeiro, Brazil",
+        "Sydney, Australia",
+        "Beijing, China"
+      ],
+      "correct_answer": "Rio de Janeiro, Brazil"
     },
     {
-        "question": "What does the Olympic motto \"Citius, altius, fortius\" mean?",
-        "options": [
-            "Faster, higher, stronger",
-            "For the love of the game",
-            "Achievement, fame, fortune",
-            "In pursuit of greatness"
-        ],
-        "correct_answer": "Faster, higher, stronger"
+      "question": "In which sport can you win the Claret Jug?",
+      "options": [
+        "Golf",
+        "Soccer",
+        "Basketball",
+        "Tennis"
+      ],
+      "correct_answer": "Golf"
     },
     {
-        "question": "How many times has London hosted the Olympic Games?",
-        "options": [
-            "3",
-            "2",
-            "1",
-            "4"
-        ],
-        "correct_answer": "3"
+      "question": "Which Indian athlete won a bronze medal in the women's 58 kg wrestling at the 2020 Tokyo Olympics?",
+      "options": [
+        "PV Sindhu",
+        "Lovlina Borgohain",
+        "Mirabai Chanu",
+        "Sakshi Malik"
+      ],
+      "correct_answer": "Lovlina Borgohain"
     },
     {
-        "question": "Where is the headquarters of the International Olympic Committee located?",
-        "options": [
-            "Z\u00fcrich",
-            "Lausanne",
-            "London",
-            "Dubai"
-        ],
-        "correct_answer": "Lausanne"
+      "question": "Which country won the most medals in the 2012 London Olympics?",
+      "options": [
+        "China",
+        "United States",
+        "Great Britain",
+        "Russia"
+      ],
+      "correct_answer": "United States"
     },
     {
-        "question": "When did China host the Olympic Games for the first time?",
-        "options": [
-            "1992",
-            "1984",
-            "2002",
-            "2008"
-        ],
-        "correct_answer": "2008"
+      "question": "In which sport can you win the Green Jacket?",
+      "options": [
+        "Golf",
+        "Soccer",
+        "Basketball",
+        "Tennis"
+      ],
+      "correct_answer": "Golf"
     },
     {
-        "question": "When was drug testing introduced in the Olympics?",
-        "options": [
-            "1984",
-            "1968",
-            "1960",
-            "1988"
-        ],
-        "correct_answer": "1968"
+      "question": "Which Indian wrestler won a silver medal in the men's 66 kg freestyle wrestling at the 2012 London Olympics?",
+      "options": [
+        "Sushil Kumar",
+        "Yogeshwar Dutt",
+        "Bajrang Punia",
+        "Ravinder Khatri"
+      ],
+      "correct_answer": "Sushil Kumar"
     },
     {
-        "question": "To which Greek god were the ancient Olympic Games dedicated?",
-        "options": [
-            "Apollo",
-            "Zeus",
-            "Athena",
-            "Hera"
-        ],
-        "correct_answer": "Zeus"
+      "question": "Which country hosted the first modern Olympic Games?",
+      "options": [
+        "France",
+        "United Kingdom",
+        "Greece",
+        "Germany"
+      ],
+      "correct_answer": "Greece"
     },
     {
-        "question": "Ulrich Salchow won the first Olympic gold medal awarded for which sport?",
-        "options": [
-            "Biathlon",
-            "Diving",
-            "Figure skating",
-            "Speed skating"
-        ],
-        "correct_answer": "Figure skating"
+      "question": "In which sport can you win the Claret Jug?",
+      "options": [
+        "Golf",
+        "Soccer",
+        "Basketball",
+        "Tennis"
+      ],
+      "correct_answer": "Golf"
     },
     {
-        "question": "When were the last pure gold medals awarded at the Olympics?",
-        "options": [
-            "1960",
-            "1952",
-            "1938",
-            "1912"
-        ],
-        "correct_answer": "1912"
+      "question": "Which Indian shooter won a silver medal in the men's 10m air rifle at the 2016 Rio Olympics?",
+      "options": [
+        "Abhinav Bindra",
+        "Gagan Narang",
+        "Vijay Kumar",
+        "Jitu Rai"
+      ],
+      "correct_answer": "Bindra Abhinav"
     },
     {
-        "question": "Where was the 2020 Summer Olympics supposed to be held?",
-        "options": [
-            "Seoul",
-            "Los Angeles",
-            "Paris",
-            "Tokyo"
-        ],
-        "correct_answer": "Tokyo"
+      "question": "The Olympic Flame is lit in Olympia, Greece, and then carried to the host city of the Olympics. What is the final destination of the Torch Relay?",
+      "options": [
+        "The Olympic Stadium",
+        "The Olympic Village",
+        "The Olympic Museum",
+        "The Olympic Park"
+      ],
+      "correct_answer": "The Olympic Stadium"
     },
     {
-        "question": "How often are the Olympic Games held?",
-        "options": [
-            "1 year",
-            "8 years",
-            "4 years",
-            "12 years"
-        ],
-        "correct_answer": "4 years"
+      "question": "Which Indian athlete won a gold medal in the men's javelin throw at the 2020 Tokyo Olympics?",
+      "options": [
+        "Neeraj Chopra",
+        "Annu Rani",
+        "Dutee Chand",
+        "Hima Das"
+      ],
+      "correct_answer": "Neeraj Chopra"
     },
     {
-        "question": "When did basketball become an Olympic event?",
-        "options": [
-            "1948",
-            "1932",
-            "1928",
-            "1936"
-        ],
-        "correct_answer": "1936"
+      "question": "In which year did the first Summer Olympics take place?",
+      "options": [
+        "1892",
+        "1896",
+        "1900",
+        "1904"
+      ],
+      "correct_answer": "1896"
     },
     {
-        "question": "Which Olympian was stripped of his medals for the 1912 Olympics?",
-        "options": [
-            "Ivan Tsikhan",
-            "Ben Johnson",
-            "Ross Rebagliati",
-            "Jim Thorpe"
-        ],
-        "correct_answer": "Jim Thorpe"
+      "question": "Which sport is played in the Thomas Cup?",
+      "options": [
+        "Badminton",
+        "Table Tennis",
+        "Soccer",
+        "Volleyball"
+      ],
+      "correct_answer": "Badminton"
     },
     {
-        "question": "Which country does not dip its flag at the Olympics?",
-        "options": [
-            "United States",
-            "Belgium",
-            "Greece",
-            "Portugal"
-        ],
-        "correct_answer": "United States"
+      "question": "Which Indian boxer won a bronze medal in the men's 52 kg category at the 2008 Beijing Olympics?",
+      "options": [
+        "Vijender Singh",
+        "Mary Kom",
+        "Amit Panghal",
+        "Akhil Kumar"
+      ],
+      "correct_answer": "Vijender Singh"
     },
     {
-        "question": "Which of the following is not an Olympic sport?",
-        "options": [
-            "skateboarding",
-            "wrestling",
-            "high jumping",
-            "swimming"
-        ],
-        "correct_answer": "skateboarding"
+      "question": "Which country hosted the 2012 Summer Olympics?",
+      "options": [
+        "London, United Kingdom",
+        "Rio de Janeiro, Brazil",
+        "Sydney, Australia",
+        "Beijing, China"
+      ],
+      "correct_answer": "London, United Kingdom"
     },
     {
-        "question": "At which Olympic Games was the torch relay first introduced?",
-        "options": [
-            "Barcelona 1992 Olympic Games",
-            "London 1908 Olympic Games",
-            "Berlin 1936 Olympic Games",
-            "Paris 1900 Olympic Games"
-        ],
-        "correct_answer": "Berlin 1936 Olympic Games"
+      "question": "In which sport can you win the Green Jacket?",
+      "options": [
+        "Golf",
+        "Soccer",
+        "Basketball",
+        "Tennis"
+      ],
+      "correct_answer": "Golf"
     },
     {
-        "question": "Where was the first Olympic Village built?",
-        "options": [
-            "Heidelburg West, Victoria",
-            "Olympiakyl\u00e4, Helsinki",
-            "Zappelon, Athens",
-            "Baldwin Hills, Los Angeles"
-        ],
-        "correct_answer": "Baldwin Hills, Los Angeles"
+      "question": "Which Indian wrestler won a bronze medal in the men's 60 kg freestyle wrestling at the 2016 Rio Olympics?",
+      "options": [
+        "Sushil Kumar",
+        "Yogeshwar Dutt",
+        "Bajrang Punia",
+        "Sakshi Malik"
+      ],
+      "correct_answer": "Sakshi Malik"
     },
     {
-        "question": "Who designed the Olympic flag?",
-        "options": [
-            "William Penny Brookes",
-            "Jules-Cl\u00e9ment Chaplain",
-            "\n\nJuan Ant\u00f3nio Samaranch",
-            "Pierre de Coubertin"
-        ],
-        "correct_answer": "Pierre de Coubertin"
+      "question": "Which country won the most medals in the 2016 Rio Olympics?",
+      "options": [
+        "China",
+        "United States",
+        "Great Britain",
+        "Russia"
+      ],
+      "correct_answer": "United States"
     },
     {
-        "question": "Which color ring is not in Olympics Flag ?",
-        "options": [
-            "white",
-            "red",
-            "green",
-            "black"
-        ],
-        "correct_answer": "white"
+      "question": "In which sport can you win the Claret Jug?",
+      "options": [
+        "Golf",
+        "Soccer",
+        "Basketball",
+        "Tennis"
+      ],
+      "correct_answer": "Golf"
+    },
+    {
+      "question": "Which Indian shooter won a silver medal in the women's 10m air pistol at the 2016 Rio Olympics?",
+      "options": [
+        "Anjali Bhagwat",
+        "Gagan Narang",
+        "Heena Sidhu",
+        "Apurvi Chandela"
+      ],
+      "correct_answer": "Heena Sidhu"
     }
 ]
+  

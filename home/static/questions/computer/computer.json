@@ -1,0 +1,323 @@
+[
+    {
+      "question": "What does CPU stand for in computing?",
+      "options": [
+        "Central Processing Unit",
+        "Computer Processing Unit",
+        "Core Processing Unit",
+        "Control Processing Unit"
+      ],
+      "correct_answer": "Central Processing Unit"
+    },
+    {
+      "question": "Which of the following is a primary input device of a computer?",
+      "options": [
+        "Monitor",
+        "Keyboard",
+        "Printer",
+        "Speakers"
+      ],
+      "correct_answer": "Keyboard"
+    },
+    {
+      "question": "What is the purpose of an operating system in a computer?",
+      "options": [
+        "To store and manage data",
+        "To display advertisements",
+        "To run applications and manage hardware",
+        "To connect to the internet"
+      ],
+      "correct_answer": "To run applications and manage hardware"
+    },
+    {
+      "question": "What is the full form of RAM in computing?",
+      "options": [
+        "Random Access Memory",
+        "Read Only Memory",
+        "Random Available Memory",
+        "Real-time Access Memory"
+      ],
+      "correct_answer": "Random Access Memory"
+    },
+    {
+      "question": "Which component of a computer is responsible for processing graphics and visuals?",
+      "options": [
+        "CPU",
+        "GPU",
+        "RAM",
+        "SSD"
+      ],
+      "correct_answer": "GPU"
+    },
+    {
+      "question": "What is the function of a motherboard in a computer?",
+      "options": [
+        "To store data permanently",
+        "To provide power to the computer",
+        "To connect all hardware components",
+        "To display output on the monitor"
+      ],
+      "correct_answer": "To connect all hardware components"
+    },
+    {
+      "question": "What is the purpose of a UPS (Uninterruptible Power Supply) in computing?",
+      "options": [
+        "To cool down the computer",
+        "To provide high-speed internet",
+        "To ensure uninterrupted power supply",
+        "To increase processor speed"
+      ],
+      "correct_answer": "To ensure uninterrupted power supply"
+    },
+    {
+      "question": "Which type of software allows users to perform specific tasks, like creating documents or editing photos?",
+      "options": [
+        "Operating System",
+        "Utility Software",
+        "Application Software",
+        "Programming Software"
+      ],
+      "correct_answer": "Application Software"
+    },
+    {
+      "question": "What is the purpose of a firewall in computing?",
+      "options": [
+        "To improve graphics performance",
+        "To protect against viruses and unauthorized access",
+        "To enhance internet speed",
+        "To create backups of data"
+      ],
+      "correct_answer": "To protect against viruses and unauthorized access"
+    },
+    {
+      "question": "Which computer port is typically used to connect a printer?",
+      "options": [
+        "USB",
+        "HDMI",
+        "Ethernet",
+        "VGA"
+      ],
+      "correct_answer": "USB"
+    },
+    {
+      "question": "What does the acronym HTML stand for in web development?",
+      "options": [
+        "HyperText Markup Language",
+        "High-Level Modeling Language",
+        "Hyperlink and Text Markup Language",
+        "Home Tool Markup Language"
+      ],
+      "correct_answer": "HyperText Markup Language"
+    },
+    {
+      "question": "Which of the following is a web browser?",
+      "options": [
+        "Microsoft Word",
+        "Google Chrome",
+        "Adobe Photoshop",
+        "Microsoft Excel"
+      ],
+      "correct_answer": "Google Chrome"
+    },
+    {
+      "question": "What is the purpose of a mouse in computing?",
+      "options": [
+        "To display images on the screen",
+        "To type text",
+        "To perform calculations",
+        "To control the cursor on the screen"
+      ],
+      "correct_answer": "To control the cursor on the screen"
+    },
+    {
+      "question": "Which computer memory is non-volatile and retains data even when the power is turned off?",
+      "options": [
+        "RAM",
+        "SSD",
+        "HDD",
+        "ROM"
+      ],
+      "correct_answer": "ROM"
+    },
+    {
+      "question": "What is the function of an optical drive in a computer?",
+      "options": [
+        "To provide internet connectivity",
+        "To read and write optical discs",
+        "To store the operating system",
+        "To display high-quality images"
+      ],
+      "correct_answer": "To read and write optical discs"
+    },
+    {
+      "question": "What is the purpose of the BIOS (Basic Input/Output System) in a computer?",
+      "options": [
+        "To run software applications",
+        "To store data permanently",
+        "To provide power to the computer",
+        "To boot up the computer and initialize hardware"
+      ],
+      "correct_answer": "To boot up the computer and initialize hardware"
+    },
+    {
+      "question": "What does GPU stand for in computing?",
+      "options": [
+        "General Processing Unit",
+        "Graphics Processing Unit",
+        "Gaming Processing Unit",
+        "General Productivity Unit"
+      ],
+      "correct_answer": "Graphics Processing Unit"
+    },
+    {
+      "question": "Which of the following is an example of an input device?",
+      "options": [
+        "Monitor",
+        "Printer",
+        "Scanner",
+        "Speakers"
+      ],
+      "correct_answer": "Scanner"
+    },
+    {
+      "question": "What is the purpose of an antivirus software?",
+      "options": [
+        "To create documents and spreadsheets",
+        "To protect against malware and viruses",
+        "To manage hardware components",
+        "To improve internet speed"
+      ],
+      "correct_answer": "To protect against malware and viruses"
+    },
+    {
+      "question": "Which component of a computer is responsible for storing data in the long term?",
+      "options": [
+        "CPU",
+        "RAM",
+        "SSD",
+        "HDD"
+      ],
+      "correct_answer": "HDD"
+    },
+    {
+      "question": "What is the purpose of the CTRL + Z keyboard shortcut?",
+      "options": [
+        "To undo the last action",
+        "To copy selected text",
+        "To close the current window",
+        "To paste copied text"
+      ],
+      "correct_answer": "To undo the last action"
+    },
+    {
+      "question": "What is the full form of USB in computing?",
+      "options": [
+        "Universal Serial Bus",
+        "Unified System Backup",
+        "Ultra Speed Bandwidth",
+        "User System Bridge"
+      ],
+      "correct_answer": "Universal Serial Bus"
+    },
+    {
+      "question": "Which computer port is used to connect external hard drives?",
+      "options": [
+        "USB",
+        "HDMI",
+        "VGA",
+        "Ethernet"
+      ],
+      "correct_answer": "USB"
+    },
+    {
+      "question": "What does SSD stand for in computing?",
+      "options": [
+        "Solid State Drive",
+        "Super Speed Disk",
+        "Storage and System Drive",
+        "System Software Driver"
+      ],
+      "correct_answer": "Solid State Drive"
+    },
+    {
+      "question": "What is the function of the power supply unit in a computer?",
+      "options": [
+        "To process data and perform calculations",
+        "To provide power to the motherboard and other components",
+        "To display images on the screen",
+        "To store data permanently"
+      ],
+      "correct_answer": "To provide power to the motherboard and other components"
+    },
+    {
+      "question": "Which programming language is used for creating web pages and web applications?",
+      "options": [
+        "Java",
+        "C++",
+        "Python",
+        "JavaScript"
+      ],
+      "correct_answer": "JavaScript"
+    },
+    {
+      "question": "What is the purpose of the CTRL + C keyboard shortcut?",
+      "options": [
+        "To close the current window",
+        "To undo the last action",
+        "To copy selected text",
+        "To paste copied text"
+      ],
+      "correct_answer": "To copy selected text"
+    },
+    {
+      "question": "What does LAN stand for in computer networking?",
+      "options": [
+        "Local Area Network",
+        "Large Area Network",
+        "Longitudinal Access Network",
+        "Logical Array Network"
+      ],
+      "correct_answer": "Local Area Network"
+    },
+    {
+      "question": "Which of the following is a volatile memory?",
+      "options": [
+        "RAM",
+        "HDD",
+        "SSD",
+        "ROM"
+      ],
+      "correct_answer": "RAM"
+    },
+    {
+      "question": "What is the function of a graphics card in a computer?",
+      "options": [
+        "To store and manage data",
+        "To process web pages",
+        "To run software applications",
+        "To render graphics and visuals for display"
+      ],
+      "correct_answer": "To render graphics and visuals for display"
+    },
+    {
+      "question": "What is the purpose of the CTRL + V keyboard shortcut?",
+      "options": [
+        "To close the current window",
+        "To undo the last action",
+        "To copy selected text",
+        "To paste copied text"
+      ],
+      "correct_answer": "To paste copied text"
+    },
+    {
+      "question": "Which of the following is an example of output device?",
+      "options": [
+        "Mouse",
+        "Keyboard",
+        "Monitor",
+        "Scanner"
+      ],
+      "correct_answer": "Monitor"
+    }
+]
+  

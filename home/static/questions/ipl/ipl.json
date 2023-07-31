@@ -1,0 +1,303 @@
+[
+    {
+      "question": "Which team won the inaugural season of IPL in 2008?",
+      "options": [
+        "Mumbai Indians",
+        "Chennai Super Kings",
+        "Rajasthan Royals",
+        "Kolkata Knight Riders"
+      ],
+      "correct_answer": "Rajasthan Royals"
+    },
+    {
+      "question": "Who holds the record for the highest individual score in an IPL match?",
+      "options": [
+        "Chris Gayle",
+        "Brendon McCullum",
+        "AB de Villiers",
+        "David Warner"
+      ],
+      "correct_answer": "Chris Gayle"
+    },
+    {
+      "question": "Which IPL team is known as the 'Orange Army'?",
+      "options": [
+        "Kolkata Knight Riders",
+        "Sunrisers Hyderabad",
+        "Royal Challengers Bangalore",
+        "Kings XI Punjab"
+      ],
+      "correct_answer": "Sunrisers Hyderabad"
+    },
+    {
+      "question": "Which city hosted the first-ever IPL final in 2008?",
+      "options": [
+        "Mumbai",
+        "Kolkata",
+        "Chennai",
+        "Bangalore"
+      ],
+      "correct_answer": "Mumbai"
+    },
+    {
+      "question": "Which player is known as 'Captain Cool' and led Chennai Super Kings to multiple IPL victories?",
+      "options": [
+        "Sachin Tendulkar",
+        "Rohit Sharma",
+        "MS Dhoni",
+        "Virat Kohli"
+      ],
+      "correct_answer": "MS Dhoni"
+    },
+    {
+      "question": "In which year was the first 'Super Over' played in IPL?",
+      "options": [
+        "2009",
+        "2012",
+        "2013",
+        "2019"
+      ],
+      "correct_answer": "2009"
+    },
+    {
+      "question": "Which team holds the record for the most IPL titles as of 2021?",
+      "options": [
+        "Mumbai Indians",
+        "Chennai Super Kings",
+        "Kolkata Knight Riders",
+        "Royal Challengers Bangalore"
+      ],
+      "correct_answer": "Mumbai Indians"
+    },
+    {
+      "question": "Which Bollywood actress is the co-owner of Kolkata Knight Riders?",
+      "options": [
+        "Deepika Padukone",
+        "Preity Zinta",
+        "Priyanka Chopra",
+        "Juhi Chawla"
+      ],
+      "correct_answer": "Juhi Chawla"
+    },
+    {
+      "question": "In which season did two new teams, Pune Warriors India and Kochi Tuskers Kerala, join the IPL?",
+      "options": [
+        "2010",
+        "2011",
+        "2012",
+        "2013"
+      ],
+      "correct_answer": "2011"
+    },
+    {
+      "question": "Which South African cricketer is known as the 'Universe Boss' in IPL?",
+      "options": [
+        "AB de Villiers",
+        "Hashim Amla",
+        "Dale Steyn",
+        "Chris Gayle"
+      ],
+      "correct_answer": "Chris Gayle"
+    },
+    {
+      "question": "Which team is known for their 'Whistle Podu' chant?",
+      "options": [
+        "Mumbai Indians",
+        "Kolkata Knight Riders",
+        "Chennai Super Kings",
+        "Rajasthan Royals"
+      ],
+      "correct_answer": "Chennai Super Kings"
+    },
+    {
+      "question": "Who holds the record for the most wickets in IPL history?",
+      "options": [
+        "Lasith Malinga",
+        "Dwayne Bravo",
+        "Harbhajan Singh",
+        "Sunil Narine"
+      ],
+      "correct_answer": "Lasith Malinga"
+    },
+    {
+      "question": "Which team won the IPL title in 2020?",
+      "options": [
+        "Delhi Capitals",
+        "Mumbai Indians",
+        "Kings XI Punjab",
+        "Sunrisers Hyderabad"
+      ],
+      "correct_answer": "Mumbai Indians"
+    },
+    {
+      "question": "Which team is known as the 'Royal Challengers'?",
+      "options": [
+        "Royal Challengers Bangalore",
+        "Rajasthan Royals",
+        "Kings XI Punjab",
+        "Delhi Capitals"
+      ],
+      "correct_answer": "Royal Challengers Bangalore"
+    },
+    {
+      "question": "Which IPL team is associated with the city of Jaipur?",
+      "options": [
+        "Kolkata Knight Riders",
+        "Mumbai Indians",
+        "Chennai Super Kings",
+        "Rajasthan Royals"
+      ],
+      "correct_answer": "Rajasthan Royals"
+    },
+    {
+      "question": "Which bowler is known for his 'Doosra' and played for Sunrisers Hyderabad?",
+      "options": [
+        "Harbhajan Singh",
+        "Ravichandran Ashwin",
+        "Muttiah Muralitharan",
+        "Sunil Narine"
+      ],
+      "correct_answer": "Sunil Narine"
+    },
+    {
+      "question": "Which franchise is associated with the team colors of Blue and Gold?",
+      "options": [
+        "Mumbai Indians",
+        "Delhi Capitals",
+        "Kings XI Punjab",
+        "Kolkata Knight Riders"
+      ],
+      "correct_answer": "Mumbai Indians"
+    },
+    {
+      "question": "In which season was the IPL held entirely outside India due to the general elections?",
+      "options": [
+        "2012",
+        "2014",
+        "2016",
+        "2019"
+      ],
+      "correct_answer": "2009"
+    },
+    {
+      "question": "Which IPL team's home ground is named the 'Eden Gardens'?",
+      "options": [
+        "Mumbai Indians",
+        "Chennai Super Kings",
+        "Kolkata Knight Riders",
+        "Delhi Capitals"
+      ],
+      "correct_answer": "Kolkata Knight Riders"
+    },
+    {
+      "question": "Which Australian cricketer is known as the 'Pocket Dynamite' in IPL?",
+      "options": [
+        "David Warner",
+        "Shane Watson",
+        "Glenn Maxwell",
+        "Steve Smith"
+      ],
+      "correct_answer": "David Warner"
+    },
+    {
+      "question": "Which IPL team is known for their 'Red Army' fan group?",
+      "options": [
+        "Kings XI Punjab",
+        "Royal Challengers Bangalore",
+        "Delhi Capitals",
+        "Rajasthan Royals"
+      ],
+      "correct_answer": "Royal Challengers Bangalore"
+    },
+    {
+      "question": "Who is the current chairman of the IPL governing council?",
+      "options": [
+        "Sourav Ganguly",
+        "Rahul Dravid",
+        "Anil Kumble",
+        "Virender Sehwag"
+      ],
+      "correct_answer": "Brijesh Patel"
+    },
+    {
+      "question": "Which team holds the record for the highest team total in an IPL match?",
+      "options": [
+        "Chennai Super Kings",
+        "Kolkata Knight Riders",
+        "Royal Challengers Bangalore",
+        "Sunrisers Hyderabad"
+      ],
+      "correct_answer": "Royal Challengers Bangalore"
+    },
+    {
+      "question": "Which IPL team is associated with the city of Mohali?",
+      "options": [
+        "Delhi Capitals",
+        "Kings XI Punjab",
+        "Mumbai Indians",
+        "Chennai Super Kings"
+      ],
+      "correct_answer": "Kings XI Punjab"
+    },
+    {
+      "question": "Which player is known as the 'Hitman' and leads Mumbai Indians?",
+      "options": [
+        "Virat Kohli",
+        "Rohit Sharma",
+        "Shikhar Dhawan",
+        "Kane Williamson"
+      ],
+      "correct_answer": "Rohit Sharma"
+    },
+    {
+      "question": "Which IPL team is known as the 'Knight Riders'?",
+      "options": [
+        "Kolkata Knight Riders",
+        "Rajasthan Royals",
+        "Sunrisers Hyderabad",
+        "Mumbai Indians"
+      ],
+      "correct_answer": "Kolkata Knight Riders"
+    },
+    {
+      "question": "Who holds the record for the fastest century in an IPL match?",
+      "options": [
+        "Chris Gayle",
+        "AB de Villiers",
+        "KL Rahul",
+        "Yusuf Pathan"
+      ],
+      "correct_answer": "Chris Gayle"
+    },
+    {
+      "question": "In which season was the IPL temporarily suspended due to the COVID-19 pandemic?",
+      "options": [
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "correct_answer": "2020"
+    },
+    {
+      "question": "Which IPL team's home ground is named the 'Wankhede Stadium'?",
+      "options": [
+        "Chennai Super Kings",
+        "Kolkata Knight Riders",
+        "Mumbai Indians",
+        "Royal Challengers Bangalore"
+      ],
+      "correct_answer": "Mumbai Indians"
+    },
+    {
+      "question": "Which Indian cricketer is known as the 'Universe Boss' in IPL?",
+      "options": [
+        "Rohit Sharma",
+        "Virat Kohli",
+        "Sachin Tendulkar",
+        "Virender Sehwag"
+      ],
+      "correct_answer": "Virat Kohli"
+    }
+]
+  

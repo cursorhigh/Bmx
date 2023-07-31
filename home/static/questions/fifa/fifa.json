@@ -1,0 +1,303 @@
+[
+    {
+      "question": "Which country hosted the first FIFA World Cup in 1930?",
+      "options": [
+        "Brazil",
+        "Italy",
+        "Uruguay",
+        "Germany"
+      ],
+      "correct_answer": "Uruguay"
+    },
+    {
+      "question": "In which year did the FIFA Women's World Cup hold its first tournament?",
+      "options": [
+        "1991",
+        "1995",
+        "1999",
+        "2003"
+      ],
+      "correct_answer": "1991"
+    },
+    {
+      "question": "Which nation has won the most FIFA World Cup titles as of 2021?",
+      "options": [
+        "Germany",
+        "Argentina",
+        "Brazil",
+        "Italy"
+      ],
+      "correct_answer": "Brazil"
+    },
+    {
+      "question": "What is the name of the trophy awarded to the FIFA World Cup winner?",
+      "options": [
+        "Golden Boot",
+        "Golden Ball",
+        "World Cup Trophy",
+        "FIFA Cup"
+      ],
+      "correct_answer": "World Cup Trophy"
+    },
+    {
+      "question": "Which player has won the most FIFA Ballon d'Or awards as of 2021?",
+      "options": [
+        "Cristiano Ronaldo",
+        "Lionel Messi",
+        "Neymar",
+        "Andres Iniesta"
+      ],
+      "correct_answer": "Lionel Messi"
+    },
+    {
+      "question": "In which country is the FIFA headquarters located?",
+      "options": [
+        "Switzerland",
+        "France",
+        "Germany",
+        "Italy"
+      ],
+      "correct_answer": "Switzerland"
+    },
+    {
+      "question": "Which FIFA World Cup was the first to introduce the VAR (Video Assistant Referee) system?",
+      "options": [
+        "2010",
+        "2014",
+        "2018",
+        "2022"
+      ],
+      "correct_answer": "2018"
+    },
+    {
+      "question": "Which player holds the record for the most goals scored in FIFA World Cup history?",
+      "options": [
+        "Ronaldo Nazário",
+        "Miroslav Klose",
+        "Pelé",
+        "Diego Maradona"
+      ],
+      "correct_answer": "Miroslav Klose"
+    },
+    {
+      "question": "Which nation won the FIFA Women's World Cup in 2019?",
+      "options": [
+        "Germany",
+        "Japan",
+        "United States",
+        "Sweden"
+      ],
+      "correct_answer": "United States"
+    },
+    {
+      "question": "Which country will host the FIFA World Cup in 2022?",
+      "options": [
+        "Russia",
+        "Qatar",
+        "United States",
+        "England"
+      ],
+      "correct_answer": "Qatar"
+    },
+    {
+      "question": "Which team won the inaugural FIFA Club World Cup in 2000?",
+      "options": [
+        "Manchester United",
+        "Barcelona",
+        "Corinthians",
+        "AC Milan"
+      ],
+      "correct_answer": "Corinthians"
+    },
+    {
+      "question": "What is the official ball used in the FIFA World Cup tournaments?",
+      "options": [
+        "Brazuca",
+        "Tango",
+        "Jabulani",
+        "Telstar"
+      ],
+      "correct_answer": "Telstar"
+    },
+    {
+      "question": "How often is the FIFA World Cup held?",
+      "options": [
+        "Every year",
+        "Every two years",
+        "Every four years",
+        "Every six years"
+      ],
+      "correct_answer": "Every four years"
+    },
+    {
+      "question": "Which player has won the most FIFA World Cup titles as a player?",
+      "options": [
+        "Pele",
+        "Diego Maradona",
+        "Cristiano Ronaldo",
+        "Lionel Messi"
+      ],
+      "correct_answer": "Pele"
+    },
+    {
+      "question": "Which nation won the first FIFA Women's World Cup in 1991?",
+      "options": [
+        "Germany",
+        "Norway",
+        "United States",
+        "Sweden"
+      ],
+      "correct_answer": "United States"
+    },
+    {
+      "question": "Who is the all-time top scorer in FIFA Women's World Cup history?",
+      "options": [
+        "Marta",
+        "Abby Wambach",
+        "Birgit Prinz",
+        "Alex Morgan"
+      ],
+      "correct_answer": "Marta"
+    },
+    {
+      "question": "Which player has won the FIFA World Cup Golden Boot award for scoring the most goals in a tournament?",
+      "options": [
+        "Neymar",
+        "Thomas Muller",
+        "Cristiano Ronaldo",
+        "Harry Kane"
+      ],
+      "correct_answer": "Harry Kane"
+    },
+    {
+      "question": "In which country was the first FIFA Women's World Cup held?",
+      "options": [
+        "Germany",
+        "Sweden",
+        "China",
+        "United States"
+      ],
+      "correct_answer": "China"
+    },
+    {
+      "question": "Which nation hosted the FIFA World Cup in 2006?",
+      "options": [
+        "Brazil",
+        "Germany",
+        "Italy",
+        "France"
+      ],
+      "correct_answer": "Germany"
+    },
+    {
+      "question": "What is the name of the official anthem of the FIFA World Cup?",
+      "options": [
+        "Waka Waka (This Time for Africa)",
+        "We Are One (Ole Ola)",
+        "Live It Up",
+        "Cup of Life (La Copa de la Vida)"
+      ],
+      "correct_answer": "Waka Waka (This Time for Africa)"
+    },
+    {
+      "question": "Which team won the FIFA World Cup in 2014?",
+      "options": [
+        "Germany",
+        "Argentina",
+        "Brazil",
+        "Spain"
+      ],
+      "correct_answer": "Germany"
+    },
+    {
+      "question": "In which city is the FIFA World Football Museum located?",
+      "options": [
+        "Barcelona",
+        "Milan",
+        "Zurich",
+        "London"
+      ],
+      "correct_answer": "Zurich"
+    },
+    {
+      "question": "Which nation won the FIFA Women's World Cup in 2015?",
+      "options": [
+        "Germany",
+        "Japan",
+        "Canada",
+        "United States"
+      ],
+      "correct_answer": "United States"
+    },
+    {
+      "question": "Who was the top scorer in the 2018 FIFA World Cup?",
+      "options": [
+        "Cristiano Ronaldo",
+        "Kylian Mbappe",
+        "Harry Kane",
+        "Luka Modric"
+      ],
+      "correct_answer": "Harry Kane"
+    },
+    {
+      "question": "Which nation won the FIFA World Cup in 1954?",
+      "options": [
+        "Brazil",
+        "West Germany",
+        "Argentina",
+        "Italy"
+      ],
+      "correct_answer": "West Germany"
+    },
+    {
+      "question": "What is the current name of the national football team of the Netherlands?",
+      "options": [
+        "Oranje",
+        "Azzurri",
+        "La Roja",
+        "Les Bleus"
+      ],
+      "correct_answer": "Oranje"
+    },
+    {
+      "question": "Which country will host the FIFA Women's World Cup in 2023?",
+      "options": [
+        "United States",
+        "Australia",
+        "Canada",
+        "Germany"
+      ],
+      "correct_answer": "Australia"
+    },
+    {
+      "question": "What is the full name of the organization FIFA?",
+      "options": [
+        "Football Information and Foundation Association",
+        "Fédération Internationale de Football Association",
+        "Fédération Internationale de Football Athletics",
+        "Fédération International Football Agency"
+      ],
+      "correct_answer": "Fédération Internationale de Football Association"
+    },
+    {
+      "question": "Which nation won the FIFA World Cup in 1994?",
+      "options": [
+        "Brazil",
+        "Argentina",
+        "Italy",
+        "United States"
+      ],
+      "correct_answer": "Brazil"
+    },
+    {
+      "question": "Who was the Golden Ball winner of the 2010 FIFA World Cup?",
+      "options": [
+        "Andres Iniesta",
+        "Lionel Messi",
+        "Thomas Muller",
+        "Diego Forlan"
+      ],
+      "correct_answer": "Diego Forlan"
+    }
+]
+  
