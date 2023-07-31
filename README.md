@@ -1,4 +1,4 @@
-# BMX IQ Race - Online Gaming Platform
+# BMX IQ Race(version- 2.1.0) - Online Gaming Platform
 
 ![BMX IQ Race](https://i.ibb.co/XjKBnKg/circle-logo-1.png)
 
