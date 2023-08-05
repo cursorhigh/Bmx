@@ -3,6 +3,7 @@
 <head>
     {% load static %}
     <title>BMX IQ Race - Settings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{%static 'image\favicon.ico'%}" type="image/x-icon">
     <link rel="stylesheet" href="{%static 'css/settings.css'%}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -18,11 +19,12 @@
         <div class="buttons">
             <div class="reset-button" title="Reset" onclick="handleButtonClick(this.title)"></div>
             <div class="suggest-button" title="Suggestions" onclick="handleButtonClick(this.title)"></div>
+            <div class="accdel-button" title="Permanent Account Delete" onclick="handleButtonClick(this.title)"></div>
             <div class="back-button" title="Back To Home" onclick="handleButtonClick(this.title)"></div>
         </div>
     </main>
     <footer>
-        <p class="version">Version: 1.1.0</p>
+        <p class="version">Version: 2.1.0</p>
     </footer>
     <script src="{%static 'js/settings.js' %}"></script>
 </body>

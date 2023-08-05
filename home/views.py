@@ -16,7 +16,7 @@ from users.models import User
 def home(request):
     return render(request,'home.html')
 def update_ranks():
-    users = User.objects.order_by('-winrate','-wins','-score','-pscore','username')
+    users = User.objects.order_by('-wins','-winrate','-score','-pscore','username')
     for rank, user in enumerate(users, start=1):
         user.rank = rank
         user.save()
@@ -75,6 +75,7 @@ def settings(request):
 @require_auth
 def suggest(request):
     return render(request,'suggest.html')
+
 @require_auth
 def reset(request):
     current_user = User.objects.get(pk=request.user)
@@ -89,26 +90,27 @@ def reset(request):
     return redirect('/settings')
 @require_auth
 def matchup(request):
-    playerid = request.GET.get('playerid')
     category = request.GET.get('category')
     context = {
-        'playerid': playerid,
         'category': category
     }
     return render(request, 'matchmaking.html', context)
+
 
 @require_auth
 def join_game(request):
     try:
         if request.method == 'GET':
-            player_id = request.GET.get('playerID')
+            person = User.objects.get(username=request.user.username)
+            player_id = person.uid
+            playername = request.user.first_name
             category = request.GET.get('category')
             try:
-                player = matchmaking.objects.create(player_id=player_id, category=category)
+                player = matchmaking.objects.create(player_id=player_id, category=category, playername=playername)
             except:
                 player = matchmaking.objects.filter(player_id=player_id)
                 player.delete()
-                player = matchmaking.objects.create(player_id=player_id, category=category)
+                player = matchmaking.objects.create(player_id=player_id, category=category,playername=playername)
             opponent = None
             t=0
             while not opponent and t!=6:
@@ -125,6 +127,7 @@ def join_game(request):
             elif opponent:
                 response_data = {
                     'opponentID': opponent.player_id,
+                    'opponentname':  opponent.playername,
                     'opponentCategory': opponent.category,
                     'show': True
                 }
@@ -153,8 +156,10 @@ def join_global(request):
 @require_auth
 def mid(request):
     if request.method == 'GET':
-        player_id = request.GET.get('pid')
+        person = User.objects.get(username=request.user.username)
+        player_id = person.uid
         opponent_id = request.GET.get('oid')
+        opponentname = request.GET.get('oname')
         category = request.GET.get('category')
         room_name = f"{player_id}_{opponent_id}_{category}"
         room_name_alt = f"{opponent_id}_{player_id}_{category}"
@@ -168,7 +173,7 @@ def mid(request):
             room_name=room_name_alt
             cache.delete(room_name)
             
-        nurl = f"/game?pid={player_id}&roomname={room_name}"
+        nurl = f"/game?pid={player_id}&roomname={room_name}&playername={request.user.username}&oname={opponentname}"
         return HttpResponseRedirect(nurl)
 
 @require_auth
@@ -181,6 +186,15 @@ def logout_now(request):
     logout(request)
     return redirect('/')
 
+@require_auth
+def perm_delete(request):
+    current_user = request.user
+    person = User.objects.get(username=request.user.username)
+    person.delete()
+    current_user.delete()
+    logout(request)
+    update_ranks()
+    return redirect('/')
 
 @require_auth
 def google_login_callback(request):
@@ -192,6 +206,7 @@ def google_login_callback(request):
     except User.DoesNotExist:
         person = User.objects.create(
             email=google_account.extra_data['email'],
+            uid = google_account.extra_data['sub'],
             rank=rank,
             score=0,
             username=request.user.username,
@@ -200,9 +215,8 @@ def google_login_callback(request):
 
     person.save()
     return redirect('/')
-from django.views.decorators.csrf import csrf_protect
+@csrf_exempt
 @require_auth
-@csrf_protect
 def leaderboard(request):
     if request.method == 'POST':
         query = request.POST.get('search')
@@ -224,15 +238,11 @@ def leaderboard(request):
 @require_auth
 def game_view(request):
     player_id = request.GET.get('player_id')
-    opponent_id = request.GET.get('opponent_id')
     room_name = request.GET.get('room_name')
-    category = request.GET.get('category')
 
     context = {
         'player_id': player_id,
-        'opponent_id': opponent_id,
         'room_name': room_name,
-        'category': category,
     }
 
     return render(request, 'game.html', context)
@@ -246,7 +256,7 @@ def chat_view(request):
     }
     print(request)
     return render(request,'gchat.html',context)
-
+@csrf_exempt
 @require_auth
 def update_score(request):
     if request.method == 'POST':
@@ -255,8 +265,7 @@ def update_score(request):
         player1_id = request.POST.get('player1_id')
         player1_score = int(request.POST.get('player1_score'))
         if winner_id == player1_id:
-            winner_id = winner_id + '@gmail.com'
-            winner = get_object_or_404(User, email=winner_id)
+            winner = get_object_or_404(User, uid=winner_id)
             winner.score += player1_score
             winner.wins +=1
             winner.total +=1
@@ -265,8 +274,7 @@ def update_score(request):
             winner.lscore = player1_score
             winner.save()
         elif winner_id != player1_id:
-            player1_id = player1_id + '@gmail.com'
-            player1 = get_object_or_404(User, email=player1_id)
+            player1 = get_object_or_404(User, uid=player1_id)
             player1.score += player1_score
             player1.total += 1
             player1.winrate = round(((player1.wins)/(player1.total))*100,1)
@@ -277,7 +285,7 @@ def update_score(request):
         return JsonResponse({'message': 'Game results handled successfully'})
     else:
         pass
-
+@csrf_exempt
 @require_auth
 def surrender_score(request):
     if request.method == 'POST':
@@ -285,8 +293,7 @@ def surrender_score(request):
         winnerscore = int(request.POST.get('winnerscore'))
         youid = request.POST.get('youid')
         youscore = int(request.POST.get('youscore'))
-        winner_id = winnerid + '@gmail.com'
-        winner = get_object_or_404(User, email=winner_id)
+        winner = get_object_or_404(User, uid=winnerid)
         winner.score += winnerscore
         winner.total +=1
         winner.wins += 1
@@ -294,8 +301,7 @@ def surrender_score(request):
         winner.pscore = int((winner.winrate*winner.lscore)/100)
         winner.lscore = winnerscore
         winner.save()
-        youid = youid + '@gmail.com'
-        youone = get_object_or_404(User, email=youid)
+        youone = get_object_or_404(User, uid=youid)
         youone.score += youscore
         youone.total += 1
         youone.winrate = round(((youone.wins)/(youone.total))*100,1)
@@ -306,6 +312,7 @@ def surrender_score(request):
         return JsonResponse({'message': 'Scores updated successfully'})
     else:
         pass
+@csrf_exempt
 @require_auth
 def left_score(request):
     if request.method == 'POST':
@@ -313,8 +320,7 @@ def left_score(request):
         winnerscore = int(request.POST.get('winnerscore'))
         youid = request.POST.get('youid')
         youscore = int(request.POST.get('youscore'))
-        winner_id = winnerid + '@gmail.com'
-        winner = get_object_or_404(User, email=winner_id)
+        winner = get_object_or_404(User, uid=winnerid)
         winner.score += winnerscore
         winner.wins += 1
         winner.total +=1
@@ -322,8 +328,7 @@ def left_score(request):
         winner.pscore = int((winner.winrate*winner.lscore)/100)
         winner.lscore = winnerscore
         winner.save()
-        youid = youid + '@gmail.com'
-        youone = get_object_or_404(User, email=youid)
+        youone = get_object_or_404(User, uid=youid)
         youone.score -= (100-youscore)
         if youone.score<0:
             youone.score=0

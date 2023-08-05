@@ -3,6 +3,7 @@
 <head>
     {% load static %}
     <link rel="icon" href="{% static 'image/favicon.ico' %}" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{%static 'css/leaderboard.css' %}">
     <title>BMX IQ Race - Leaderboard</title>
 </head>
@@ -34,7 +35,7 @@
                 {% for user in leaderboard_data %}
                     <tr>
                         <td>{{ user.rank }}</td>
-                        <td>{{ user.username }}</td>
+                        <td>{{ user.username|slice:":10" }}</td>
                         <td>{{ user.score }}</td>
                         <td>{{ user.pscore }}</td>
                         <td>{{ user.winrate }} %</td>
@@ -46,7 +47,7 @@
         <div class="back-button" title="Back To Home" onclick="handleButtonClick(this.title)"></div>
     </main>
     <footer>
-        <p class="version">Version: 1.1.0</p>
+        <p class="version">Version: 2.1.0</p>
     </footer>
     <script src="{%static 'js/leaderboard.js' %}">
     </script>

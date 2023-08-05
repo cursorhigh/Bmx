@@ -21,6 +21,7 @@ urlpatterns = [
     path('update_score/', views.update_score, name='update_score'),
     path('surrender_score/',views.surrender_score,name='surrender_score'),
     path('left_score/',views.left_score,name="left_score"),
+    path('permanentdelete/',views.perm_delete,name='acc deltion'),
     path('suggest/',views.suggest,name='suggest'),
     path('globalchat/',views.chat_view,name='globalchat'),
     path('gchatmid/',views.gchatmid,name='gchatmid')

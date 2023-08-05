@@ -1,6 +1,8 @@
 let pid = getQueryParam('pid');
 let roomname = getQueryParam('roomname');
-let url = `ws://${window.location.host}/ws/game/${pid}/${roomname}/`;
+let playername = getQueryParam('playername');
+let oname = getQueryParam('oname');
+let url = `ws://${window.location.host}/ws/game/${pid}/${roomname}/${playername}/${oname}/`;
 function getQueryParam(name) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(name);
@@ -135,12 +137,14 @@ socket.onmessage = function(event) {
     } else if (data.type === 'game_results') {
         var winner = data.winner;
         var player1ID = data.player1_id;
+        var playername = data.player1_name;
+        var player2name = data.player2_name;
+        var prompt = data.prompt;
         var player1Score = data.player1_score;
-        var player2ID = data.player2_id;
         var player2Score = data.player2_score;
-        alert('Game Over!\n: ' + winner + 
-              '\n' + player1ID + ':' + player1Score +
-              '\n' + player2ID + ':' + player2Score);
+        alert('Game Over!\n: ' + prompt + 
+              '\n' + playername + ':' + player1Score +
+              '\n' + player2name + ':' + player2Score);
         redirectToHomepage = true;
         $.ajax({
             type: 'POST',

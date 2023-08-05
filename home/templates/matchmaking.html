@@ -2,6 +2,7 @@
 <html>
 <head>
     {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/matchmaking.css' %}">
     <link rel="icon" href="{% static 'image/favicon.ico' %}" type="image/x-icon">
     <title>BMX IQ Race - Matchmaking</title>
@@ -17,7 +18,7 @@
     <main>
         <div class="opponentinfo">
             <h2>Opponent Details</h2>
-            <p>Opponent ID: <span id="opponent-id"></span></p>
+            <p>Opponent ID: <span id="opponent-name"></span></p>
             <p>Opponent Category: <span id="opponent-category"></span></p>
         </div>
         <div class="wavc">
@@ -30,7 +31,7 @@
         <div class="back-button" title="Back To Home" onclick="handleButtonClick(this.title)"></div>
     </main>
     <footer>
-        <p class="version">Version: 1.1.0</p>
+        <p class="version">Version: 2.1.0</p>
     </footer>
     <input type="hidden" id="player-id" value="{{ playerid }}">
     <input type="hidden" id="category" value="{{ category }}">
@@ -64,7 +65,6 @@
             }
         }
         $(document).ready(function() {
-            var playerID = '{{ request.GET.playerid }}';
             var category = '{{ request.GET.category }}';
             var countdown = 60; 
             var countdownInterval;
@@ -72,13 +72,12 @@
                 url: '/join-game/', 
                 type: 'GET',
                 data: {
-                    playerID: playerID,
                     category: category
                 },
                 success: function(response) {
-                    $('#opponent-id').text(response.opponentID);
+                    $('#opponent-name').text(response.opponentname);
                     $('#opponent-category').text(response.opponentCategory);
-                    var joinURL = '/mid?pid=' + playerID + '&oid=' + response.opponentID + '&category=' + category;
+                    var joinURL = '/mid?oid=' + response.opponentID + '&oname=' + response.opponentname+'&category=' + category;
                     $('#join-button').attr('href', joinURL);
                     if (response.show) {
                         $('.sudo-button').show();

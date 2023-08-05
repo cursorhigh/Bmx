@@ -3,6 +3,7 @@
 <head>
     {% load static %}
     <title>BMX IQ Race - Global Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{%static 'image\favicon.ico'%}" type="image/x-icon">
     <link rel="stylesheet" href="{%static 'css/gchat.css'%}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -116,7 +117,7 @@
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get(name);
             }
-            let url = `ws://${window.location.host}/ws/globalchat/${username}/`;
+            let url = `wss://${window.location.host}/ws/globalchat/${username}/`;
             let socket = new WebSocket(url);
             socket.onopen = function(event) {
                 console.log('Connected to GlobalChat',username);
@@ -149,7 +150,7 @@
     <div class="back-button" title="Back To Home" onclick="handleButtonClick(this.title)"></div>
     </main>
     <footer>
-        <p class="version">Version: 1.1.0</p>
+        <p class="version">Version: 2.1.0</p>
     </footer>
 </body>
 </html>

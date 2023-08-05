@@ -1,9 +1,2 @@
-.vscode
-Scripts
-db.sqlite3
-pyvenv.cfg
-requirements.txt
-Lib
-Include
-
-
+.env
+__pycache__/
