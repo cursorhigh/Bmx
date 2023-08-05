@@ -9,7 +9,7 @@
 
 BMX IQ Race is an exciting online gaming platform that challenges players' knowledge and skills in various categories, including Mathematics, General Knowledge, and three Olympic-themed categories. Players get to compete in a thrilling BMX race while answering quiz questions, making it a unique and engaging educational experience.
 
-## Features 1.1
+## Features 1.1.0
 
 - Engaging quiz-based gameplay with real-time BMX racing.
 - Categories including Mathematics, General Knowledge, and three Olympic-themed categories.
