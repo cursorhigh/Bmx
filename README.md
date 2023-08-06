@@ -29,4 +29,9 @@ BMX IQ Race is an exciting online gaming platform that challenges players' knowl
 - **Game Engine:** Major bug fixing that enhances player user experience and score. We have also added more interesting topics to play the quiz with.
 - **Account Deletion Option:** We've introduced a new option in settings that allows users to permanently delete their account from the database. Your data, scores, and progress can now be permanently removed if you choose to do so.
 
+## Some Edge Cases (hard and sensitive bugs)
+- **During Gameplay:** Compile of the score might clash with each other if a player left and finished at the same time it might apply the scoring system for both as  it needs a precise server system to track the sub-ticks so every ms info.
+- **Matchmaking Timer:** Matchmaking time is not so precise delay is of 1-2 seconds and matchmaking time is 15 sec so if a player left at 15 and another player just started they will be paired up and will match up without the player
+
+that is, for now, will be updating it later
 Happy gaming and learning! 🚀🚴‍♂️
