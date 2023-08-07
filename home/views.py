@@ -2,12 +2,12 @@ from django.shortcuts import render, redirect,get_object_or_404
 from django.contrib.auth import logout
 from users.models import User
 from matchmaking.models import matchmaking
-from allauth import socialaccount
+from django.views.decorators.http import require_POST
 from allauth.socialaccount.models import SocialAccount
 import time
 from django.core.cache import cache
 from django.views.decorators.csrf import csrf_exempt
-from django.http import JsonResponse,HttpResponseBadRequest,HttpResponseRedirect
+from django.http import JsonResponse,HttpResponseBadRequest,HttpResponseRedirect ,HttpResponse
 from django.shortcuts import render
 from django.http import Http404
 from functools import wraps
@@ -185,8 +185,8 @@ def gchatmid(request):
 def logout_now(request):
     logout(request)
     return redirect('/')
-
 @require_auth
+@require_POST
 def perm_delete(request):
     current_user = request.user
     person = User.objects.get(username=request.user.username)
@@ -194,7 +194,7 @@ def perm_delete(request):
     current_user.delete()
     logout(request)
     update_ranks()
-    return redirect('/')
+    return HttpResponse('Account deleted successfully.')
 
 @require_auth
 def google_login_callback(request):
