@@ -1,4 +1,4 @@
-# BMX IQ Race (version 2.1.0) - Online Gaming Platform
+# BMX IQ Race (version 2.1.1) - Online Gaming Platform
 
 ![BMX IQ Race](https://i.ibb.co/XjKBnKg/circle-logo-1.png)
 
@@ -15,7 +15,7 @@ BMX IQ Race is an exciting online gaming platform that challenges players' knowl
 - Categories including Mathematics, General Knowledge, and three Olympic-themed categories.
 - Seamless and interactive experience powered by WebSockets for real-time communication during gameplay.
 - User-friendly interface with an attractive design.
-- Developed with Django for robust backend and front end.
+- Developed with Django for robust backend and frontend.
 
 ## New Updates 2.0.0
 
@@ -29,9 +29,14 @@ BMX IQ Race is an exciting online gaming platform that challenges players' knowl
 - **Game Engine:** Major bug fixing that enhances player user experience and score. We have also added more interesting topics to play the quiz with.
 - **Account Deletion Option:** We've introduced a new option in settings that allows users to permanently delete their account from the database. Your data, scores, and progress can now be permanently removed if you choose to do so.
 
-## Some Edge Cases (hard and sensitive bugs)
-- **During Gameplay:** Compile of the score might clash with each other if a player left and finished at the same time it might apply the scoring system for both as  it needs a precise server system to track the sub-ticks so every ms info.
-- **Matchmaking Timer:** Matchmaking time is not so precise delay is of 1-2 seconds and matchmaking time is 15 sec so if a player left at 15 and another player just started they will be paired up and will match up without the player
+## New Updates 2.1.1
 
-that is, for now, will be updating it later
-Happy gaming and learning! 🚀🚴‍♂️
+- **Secure Post Method Triggering:** We've implemented additional security measures to ensure that the post method triggering is secure and protected against potential attacks or unauthorized access.
+- **Account Deletion:** The account deletion feature now requires manual confirmation to prevent accidental account deletion. Users cannot access the account deletion process through direct links, ensuring more intentional account deletion actions.
+
+## Some Edge Cases (hard and sensitive bugs)
+
+- **During Gameplay:** Compilation of the score might clash with each other if a player left and finished at the same time, potentially applying the scoring system for both due to the need for a precise server system to track the sub-ticks, providing every millisecond information.
+- **Matchmaking Timer:** Matchmaking time is not perfectly precise, with a delay of 1-2 seconds. When a player leaves at the exact moment another player starts, they may be paired up and matched without the first player.
+
+We are continuously working on further improvements and updates to make BMX IQ Race a more enjoyable and secure gaming platform. Happy gaming and learning! 🚀🚴‍♂️
